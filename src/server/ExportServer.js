@@ -1,4 +1,4 @@
-const hummus = require('hummus');
+const hummus = require('muhammara');
 const memoryStreams = require('memory-streams');
 const mergeImg = require('merge-img');
 const { Queue } = require('../queue.js');
