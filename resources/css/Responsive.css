@@ -1,0 +1,280 @@
+.react-datepicker-popper {
+  width: 150%;
+}
+.react-datepicker__time-container {
+  width: 80px;
+}
+.react-datepicker__time-container .react-datepicker__time .react-datepicker__time-box {
+  width: 80px;
+}
+.projectBox .outputBox a.editBtn:hover i {
+  color: #000 !important;
+}
+.fieldBoxRow .shareholder {
+  display: block;
+  width: 100%;
+}
+/*@media only screen and (max-width: 1365px) {
+
+}*/
+@media only screen and (max-width: 1199px) {
+  .react-bs-table-container .react-bs-table .react-bs-container-header table thead th {
+    overflow: visible;
+    white-space: normal;
+    text-overflow: initial;
+    width: 220px;
+    border-bottom: 0;
+  }
+  .react-bs-table-container .react-bs-table .react-bs-container-body table tbody td {
+    overflow: visible;
+    white-space: normal;
+    text-overflow: initial;
+    width: 220px;
+    border-bottom: 0;
+  }
+  .react-datepicker__time-container {
+    width: 80px;
+  }
+  .react-datepicker__time-container .react-datepicker__time .react-datepicker__time-box {
+    width: 80px;
+  }
+
+  header .navigationBox {
+    float: left;
+    width: 700px;
+  }
+  header .searchbox {
+    float: right;
+    width: 250px;
+  }
+  .projectTabs #controlled-tab-example ul.nav-tabs li {
+    min-width: 106px;
+  }
+  .projectTabs ul.nav-tabs li:before {
+    position: absolute;
+    left: 40px;
+  }
+  .react-datepicker-popper {
+    width: 150%;
+  }
+}
+
+@media only screen and (max-width: 991px) {
+  .react-bs-table-container .react-bs-table .react-bs-container-header table thead th {
+    overflow: visible;
+    white-space: normal;
+    text-overflow: initial;
+    width: 220px;
+    border-bottom: 0;
+  }
+  .react-bs-table-container .react-bs-table .react-bs-container-body table tbody td {
+    overflow: visible;
+    white-space: normal;
+    text-overflow: initial;
+    width: 220px;
+    border-bottom: 0;
+  }
+  .react-datepicker-popper {
+    width: 201%;
+  }
+  header .navigationBox {
+    float: left;
+    width: 640px;
+  }
+  .projectTabs #controlled-tab-example ul.nav-tabs li {
+    min-width: 106px;
+  }
+  .projectTabs ul.nav-tabs li:before {
+    position: absolute;
+    left: 38px;
+  }
+  .projectTabs #controlled-tab-example ul.nav-tabs li {
+    min-width: 68px;
+  }
+
+  .projectTabs #controlled-tab-example ul.nav-tabs li a {
+    padding: 5px 12px;
+  }
+  .projectTabs ul.nav-tabs li:before {
+    position: absolute;
+    left: 0;
+  }
+  header .searchbox {
+    float: right;
+  }
+  header .searchbox .searchB {
+    float: right;
+    padding-bottom: 10px;
+  }
+  .form-control {
+    padding: 0.375rem 0.4rem;
+  }
+  .profileName .contactInfo p {
+    word-break: break-word;
+  }
+  .fieldBoxRow a .tooltipBox i {
+    position: absolute;
+    right: -8px;
+    top: 9px;
+    left: unset;
+  }
+  .fieldBoxRow a .tooltipBox {
+    position: absolute;
+    top: -14px;
+    right: 28px;
+    z-index: 0;
+    left: unset;
+  }
+  .fa-caret-left::before {
+    content: '\f0da';
+  }
+  .fieldBoxRow .select.full {
+    width: 210px;
+  }
+  .fieldBoxRow .field.full {
+    width: 210px;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .react-bs-table-container .react-bs-table .react-bs-container-header table thead th {
+    overflow: visible;
+    white-space: normal;
+    text-overflow: initial;
+    width: 220px;
+    border-bottom: 0;
+  }
+  .react-bs-table-container .react-bs-table .react-bs-container-body table tbody td {
+    overflow: visible;
+    white-space: normal;
+    text-overflow: initial;
+    width: 220px;
+    border-bottom: 0;
+  }
+  .projectTabs #controlled-tab-example ul.nav-tabs li {
+    min-width: 68px;
+  }
+
+  .projectTabs #controlled-tab-example ul.nav-tabs li a {
+    padding: 5px 12px;
+  }
+  .projectTabs ul.nav-tabs li:before {
+    position: absolute;
+    left: 0;
+  }
+  header .searchbox {
+    float: right;
+  }
+  header .searchbox .searchB {
+    float: right;
+    padding-bottom: 10px;
+  }
+  header .navigationBox {
+    float: left;
+    width: 100%;
+  }
+  .fieldBoxRow .shareholder {
+    display: block;
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 575px) {
+  .react-bs-table-container .react-bs-table .react-bs-container-header table thead th {
+    overflow: visible;
+    white-space: normal;
+    text-overflow: initial;
+    width: 220px;
+    border-bottom: 0;
+  }
+  .react-bs-table-container .react-bs-table .react-bs-container-body table tbody td {
+    overflow: visible;
+    white-space: normal;
+    text-overflow: initial;
+    width: 220px;
+    border-bottom: 0;
+  }
+  .btn {
+    padding: 4px 10px;
+  }
+  header .navigationBox {
+    float: left;
+    width: 100%;
+  }
+  .react-bs-table-tool-bar .react-bs-table-del-btn {
+    margin-bottom: 10px;
+  }
+  .fieldBoxRow .shareholder {
+    display: block;
+    width: 100%;
+  }
+  .fieldBoxRow .field.full {
+    width: 100%;
+  }
+  .projectTabsBox {
+    margin-top: 40px;
+  }
+}
+
+@media only screen and (max-width: 375px) {
+  .projectTabs #controlled-tab-example ul.nav-tabs li a {
+    padding: 3px 6px;
+  }
+  .projectTabs #controlled-tab-example ul.nav-tabs li {
+    min-width: 60px;
+    margin-right: 5px;
+  }
+  .custom-button {
+    margin-bottom: 10px;
+  }
+  .modal-footer {
+    display: block;
+  }
+  .projectListTable .tabs .nav-tabs .nav-item {
+    width: 75px;
+    margin-right: 10px;
+  }
+  .projectListTable .tabs .nav-tabs .nav-item a {
+    padding: 5px 10px;
+  }
+  .google-map > div {
+    height: auto !important;
+    width: auto !important;
+  }
+  .projectDetailSidebar .editBtn {
+    position: absolute;
+    right: -10px;
+    top: 0;
+    z-index: 0;
+  }
+  .projectDetailSidebar > .pDetail .addressBox-lead > .editBtn {
+    right: 6px;
+  }
+  .projectDetailSidebar .editBtn .pro-edit {
+    position: absolute;
+    right: 16px;
+    top: 0;
+    z-index: 0;
+  }
+  header .navigationBox {
+    float: left;
+    width: 100%;
+  }
+  .fieldBoxRow .shareholder {
+    display: block;
+    width: 100%;
+  }
+  .react-bs-table-container .react-bs-table .react-bs-container-header table thead th,
+  .react-bs-table-container .react-bs-table .react-bs-container-body table tbody td {
+    width: 134px;
+  }
+  .tableSection .react-bs-container-body,
+  .tableSection .react-bs-container-header {
+    padding-left: 132px;
+  }
+  .fieldBoxRow .field.full {
+    width: 100%;
+  }
+  .projectTabsBox {
+    margin-top: 40px;
+  }
+}

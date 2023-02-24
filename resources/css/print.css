@@ -1,0 +1,328 @@
+@media print {
+  @page {
+    /*size: auto;*/
+    margin: 10mm 10mm 10mm 10mm;
+    size: Letter landscape;
+    /* size: A4 landscape;
+		size: landscape; */
+  }
+
+  * {
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact; /*page-break-inside: avoid;*/
+  }
+  a[href]:after {
+    display: none !important;
+    content: none !important;
+  }
+  table {
+    overflow: hidden !important;
+    table-layout: auto;
+  }
+  table tr td {
+    font-size: 12px;
+    padding: 5px;
+  }
+  .pdfLogoBox {
+    display: block;
+  }
+  .pdfLogoBox .logo {
+    display: inline-block;
+    margin-bottom: 20px;
+  }
+  .pdfLogoBox .logo img {
+    height: 60px;
+    width: auto;
+    border: 0;
+  }
+  .pdfLogoBox h2 {
+    display: inline-block;
+    width: auto;
+  }
+  .reportTableSection .react-bs-table-search-form,
+  .reportTableSection .react-bs-table-search-form input[type='text'] {
+    border-color: #fff !important;
+    color: #fff !important;
+    opacity: 0 !important;
+    font-size: 0 !important;
+    padding: 0 !important;
+    height: 0 !important;
+    width: 0 !important;
+  }
+
+  .react-bs-table-container
+    .react-bs-table-tool-bar
+    .col-xs-6.col-sm-6.col-md-6
+    ~ .col-xs-6.col-sm-6.col-md-6 {
+    display: none;
+  }
+
+  .reportTableSection .react-bs-table-pagination .react-bs-table-sizePerPage-dropdown button,
+  .btn:not(:disabled):not(.disabled) {
+    width: 0px;
+    height: 0px;
+    border-width: 0px !important;
+    border-color: #fff !important;
+    color: #fff !important;
+    font-size: 0px !important;
+  }
+  .react-bs-table-container .react-bs-table-pagination .pagination li.active a.page-link,
+  .react-bs-table-container .react-bs-table-pagination .pagination li a.page-link {
+    color: #fff !important;
+    background: #fff !important;
+    border-color: #fff !important;
+    font-size: 0px !important;
+  }
+
+  .react-bs-table-container .react-bs-table .react-bs-container-body table tbody td,
+  .react-bs-table-container .react-bs-table .react-bs-container-header table thead th {
+    font-size: 12px;
+    width: auto !important;
+    vertical-align: top;
+  }
+  .react-bs-table-container .react-bs-table .react-bs-container-header table thead th {
+    font-size: 12px;
+    width: auto !important;
+    vertical-align: top;
+    background-color: #f5f5f5 !important;
+  }
+  .react-bs-table-container .react-bs-table .react-bs-container-header table thead th .order {
+    display: none !important;
+  }
+  .react-bs-table-container .react-bs-table .react-bs-container-body table colgroup col,
+  .react-bs-table-container .react-bs-table .react-bs-container-header table colgroup col {
+    width: auto !important;
+    min-width: auto !important;
+  }
+  .react-bs-table-container .react-bs-table .react-bs-container-body table tbody td a,
+  .react-bs-table-container .react-bs-table .react-bs-container-header table thead th a {
+    text-decoration: none !important;
+  }
+  /*.react-bs-table-container .react-bs-table .react-bs-container-header table thead th[title="Notes"],
+	.react-bs-table-container .react-bs-table .react-bs-container-body table tbody td[data-attr="Notes"] { width: 300px !important; }*/
+  .react-bs-table-container
+    .react-bs-table
+    .react-bs-container-header
+    table
+    thead
+    th[title='Notes'],
+  .react-bs-table-container
+    .react-bs-table
+    .react-bs-container-body
+    table
+    tbody
+    td[data-attr='Notes'] {
+    width: auto !important;
+  }
+  .profit-projection table th,
+  .profit-projection table td {
+    font-size: 12px !important;
+    width: auto !important;
+  }
+
+  .addressLabelPDFreport {
+    display: block;
+  }
+  .addressLabelPDFreport table tr {
+    padding-bottom: 60px;
+    display: table;
+    width: 100%;
+  }
+  .pdfAlignInline {
+    display: inline-block;
+    vertical-align: top;
+    width: 50%;
+  }
+  .pdfAlignInline.last {
+    margin-top: -50px;
+  }
+  .timesheetPdfAlign {
+    margin-top: -20px;
+    margin-bottom: 20px;
+  }
+  .masterPDFalign {
+    margin-bottom: 30px;
+  }
+
+  table.rsrTable th {
+    font-size: 12px !important;
+    background-color: #f5f5f5 !important;
+  }
+  td.colorDivsWrapr {
+    padding: 0 !important;
+  }
+  table.rsrTable td,
+  table.rsrTable th {
+    border: 1px solid #ccc;
+  }
+  table.rsrTable th:nth-child(4) ~ th {
+    text-align: center;
+  }
+  table.rsrTable td:nth-child(4) ~ td {
+    border-right: 0px;
+    border-left: 0px;
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+  }
+  table.rsrTable td:nth-child(4) ~ td:last-child {
+    border-right: 1px solid #ccc;
+  }
+  table.rsrTable.ppr td {
+    border: 1px solid #ccc !important;
+  }
+
+  .react-bs-table-container .react-bs-table .react-bs-container-body table tbody td a,
+  .react-bs-table-container .react-bs-table .react-bs-container-body table tbody td a:hover,
+  .profit-projection table td a,
+  .profit-projection table td a:hover {
+    text-decoration: none;
+  }
+
+  .profit-projection table.timesheetsmalltable {
+    width: 295px;
+    float: right;
+  }
+  .profit-projection table.timesheetsmalltable td:first-child {
+    width: 100px !important;
+  }
+  .profit-projection table.timesheetsmalltable2 {
+    width: 216px;
+    float: right;
+  }
+  .profit-projection table.timesheetsmalltable td,
+  .profit-projection table.timesheetsmalltable2 td {
+    height: 40px;
+    width: 32px !important;
+  }
+  .tsBottomBox .left,
+  .tsBottomBox .right {
+    float: left;
+    width: 50%;
+    display: block;
+  }
+
+  .jobSiteInfoBox .col-* {
+    float: left;
+    display: inline-block;
+  }
+
+  .react-bs-table-container .react-bs-table-pagination,
+  .react-bs-table-container .react-bs-table-pagination a {
+    display: none !important;
+    visibility: hidden !important;
+    color: white !important;
+    font-size: 0 !important;
+  }
+  .jobSiteInfoBox .row {
+    display: block;
+    margin-bottom: 20px;
+  }
+  .jobSiteInfoBox .row .col-md-8 {
+    display: inline-block;
+    width: 66%;
+    vertical-align: top;
+  }
+  .jobSiteInfoBox .row .col-md-4 {
+    display: inline-block;
+    width: 33%;
+    vertical-align: top;
+  }
+  .jobSiteInfoBox .row .col-md-2 {
+    display: inline-block;
+    width: 16%;
+    vertical-align: top;
+  }
+  .jobSiteInfoBox .row .col-md-10 {
+    display: inline-block;
+    width: 83%;
+    vertical-align: top;
+  }
+  .jobSiteInfoBox .row .col-md-6 {
+    display: inline-block;
+    width: 50%;
+    vertical-align: top;
+  }
+
+  .projectHistoryTable .react-bs-table-container .react-bs-table-tool-bar .row {
+    display: block;
+    width: 100%;
+  }
+  .projectHistoryTable .react-bs-table-container .react-bs-table-tool-bar .col-xs-6,
+  .projectHistoryTable .react-bs-table-container .react-bs-table-tool-bar .col-md-6 {
+    width: 100% !important;
+    display: block;
+    max-width: 100% !important;
+    flex: auto;
+  }
+  .leadPrint {
+    display: block;
+  }
+
+  .leadPrint .notes1 .col-md-12 {
+    height: 150px;
+    display: block;
+  }
+  .leadPrint .notes1 .col-md-12 p {
+    margin: 0 0 50px 0;
+  }
+  .leadPrint .plrPD,
+  .leadPrint .notes1,
+  .leadPrint .notes2 {
+    display: block;
+  }
+  .leadPrint .plrPD .col-md-6 {
+    width: 50%;
+    float: left;
+    margin-bottom: 20px;
+  }
+  .leadPrint .plrPD .col-md-8,
+  .leadPrint .plrPD .col-md-4 {
+    width: 50%;
+    float: left;
+  }
+  .endDateMColor:after {
+    top: -3px;
+    font-size: 18px;
+  }
+  .endDateColor:after {
+    top: -3px;
+    font-size: 18px;
+  }
+  .anchorNote {
+    white-space: normal;
+    overflow: visible;
+    width: auto;
+    text-overflow: initial;
+    display: block;
+    color: #000 !important;
+  }
+  .anchorNote p {
+    color: #000 !important;
+  }
+  table.rsrTable.ppr td.jobname a {
+    white-space: normal;
+    overflow: visible;
+    width: auto;
+    text-overflow: initial;
+    display: block;
+    color: #000 !important;
+  }
+  .profit-projection table tr.subtotal td,
+  .profit-projection table tr.subtotal td {
+    background-color: #e2e2e2 !important;
+  }
+  .profit-projection table tr.total td {
+    background: #cecece !important;
+  }
+}
+
+@media print and (color) {
+  * {
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+  .profit-projection table tr.subtotal td,
+  .profit-projection table tr.subtotal td {
+    background-color: #e2e2e2 !important;
+  }
+}

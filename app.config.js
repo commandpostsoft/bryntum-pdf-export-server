@@ -12,16 +12,16 @@ const config = {
     "maximum"       : null,
 
     // Path to static resources to be served. See readme.md for details
-    "resources"     : null,
+    "resources"     : '/resources/',
 
     // True to pass `--no-sandbox` flag to the chromium
     "no-sandbox"    : true,
 
     // Maximum amount of parallel puppeteer instances to run
-    "max-workers"   : 5,
+    "max-workers"   : 1,
 
     // Log level. Possible values: error, warn, info, verbose
-    "level"         : "info",
+    "level"         : "verbose",
 
     // Pass true to wait for page load only (fonts may be missing). Reduces page loading time by at least .5s
     "quick"          : false,
@@ -31,7 +31,7 @@ const config = {
 
     // Configuration options for logger
     // Set to false to output log to the console
-    "logger"        : {
+    "logger"        : false,/*{
         "rotate"    : {
             "dirname"     : "log",
             "filename"    : "export-server-%DATE%.log",
@@ -39,7 +39,7 @@ const config = {
             "maxSize"     : "20mb",
             "maxFiles"    : "30d"
         }
-    }
+    }*/
 };
 
 module.exports = { config };

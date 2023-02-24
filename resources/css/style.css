@@ -1,0 +1,3950 @@
+@charset "UTF-8";
+
+body {
+  font-family: 'Open Sans', sans-serif;
+}
+
+ul,
+ol {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+a {
+  color: #0c87de;
+  text-decoration: none;
+  word-wrap: break-word;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+a:hover,
+a:focus {
+  color: #0c87de;
+  text-decoration: underline;
+  outline: 0;
+}
+
+img {
+  max-width: 100%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 20px 0 30px 0;
+  color: #000;
+}
+
+h1 {
+  font-size: 34px;
+}
+
+h2 {
+  font-size: 24px;
+}
+
+h3 {
+  font-size: 22px;
+}
+
+h4 {
+  font-size: 20px;
+}
+
+h5 {
+  font-size: 18px;
+}
+
+h6 {
+  font-size: 16px;
+}
+
+p {
+  font-size: 14px;
+  margin: 0 0 30px 0;
+  color: #000;
+}
+
+.padding0 {
+  padding: 0;
+}
+
+.margin0 {
+  margin: 0;
+}
+
+/* large devices */
+@media (min-width: 728px) {
+  .container {
+     max-width: 1200px;
+   }
+}
+/* extra large devices */
+@media screen and (min-width: 1200px) {
+  .container {
+    max-width: 1800px;
+  }
+}
+
+
+
+/*-------------------- Global -------------------*/
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+#root,
+.routesBox {
+  height: 100%;
+}
+
+.ContactListReport {
+  height: auto !important;
+  min-height: 100%;
+  position: relative;
+}
+
+.ContactListReport .contactBox,
+.ContactListReport .addcompany,
+.homeContainer {
+  padding-bottom: 285px;
+}
+
+.ContactListReport footer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
+
+.btn {
+  border: 2px solid #000000;
+  color: #000000;
+  background-color: #fff;
+  padding: 6px 30px;
+  font-size: 14px;
+}
+
+.btn:hover,
+.btn:active,
+.btn:focus,
+.btn:active:focus {
+  color: #fff;
+  background-color: #000000;
+  border: 2px solid #000000;
+  box-shadow: 0 0 0 0 #000000;
+}
+
+.btn:not(:disabled):not(.disabled):hover,
+.btn:not(:disabled):not(.disabled):focus {
+  color: #fff;
+  background: #000;
+}
+
+.btn-icon {
+  padding: 0;
+  background-color: transparent;
+  border: none;
+}
+
+.flip-horizontal {
+  transform: rotateY(180deg);
+}
+
+.heading2 {
+  font-size: 24px;
+  font-weight: 600;
+  color: #000;
+  margin: 10px 0 20px 0;
+}
+
+.heading1 {
+  font-size: 30px;
+  font-weight: 600;
+  color: #000;
+  margin: 10px 0 30px 0;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #ddd;
+}
+
+.btnRight {
+  float: right;
+}
+
+.homeContainer h1 {
+  margin: 0 0 20px 0;
+}
+
+/*-------------------- Header -------------------*/
+header.frontLoginHeader {
+  display: block;
+  padding: 16px 0;
+  border-bottom: 1px solid #ccc;
+}
+
+header.frontLoginHeader .frontSignin {
+  float: right;
+}
+
+header.frontLoginHeader .frontSignin li {
+  float: left;
+  margin-left: 20px;
+}
+
+header {
+  padding: 15px 0 0 0;
+  background: #fff;
+}
+
+header .logo-fluid img {
+  display: block;
+  width:100%;
+  height: auto;
+  max-height: 50px;
+}
+
+header .logo a {
+  display: block;
+}
+
+header .logo img {
+  height: 42px;
+  width: auto;
+}
+
+header .logo span.tagline {
+  font-size: 14px;
+  color: #000;
+}
+
+header .dropdown-menu {
+  position: absolute !important;
+  right: 0;
+  left:  100%;
+}
+
+
+header .navigationSection {
+  display: block;
+  margin-top: 0px;
+  background: #000000;
+}
+
+header .menuBlueBar {
+  display: block;
+}
+
+header .navigationBox {
+  float: left;
+  width: calc(100% - 400px);
+}
+
+header .navigationBox li {
+  float: left;
+  margin-right: 20px;
+  font-size: 14px;
+  line-height: 38px;
+  position: relative;
+  color: #fff;
+}
+
+header .navigationBox li a,
+header .navigationBox li a:not([href]):not([tabindex]) {
+  color: #fff;
+}
+
+header .navigationBox li a {
+  color: #fff !important;
+  display: inline-block;
+  padding-right: 6px;
+  text-decoration: none !important;
+}
+
+header .navigationBox li span,
+header .navigationBox li i {
+  color: #fff;
+  font-size: 10px;
+}
+
+header .navigationBox li ul.submenu {
+  width: 275px;
+  position: absolute;
+  top: 25px;
+  left: -15px;
+  padding-top: 15px;
+  z-index: 2;
+  display: none;
+  -webkit-transition: all 0.1s ease;
+  -moz-transition: all 0.1s ease;
+  -ms-transition: all 0.1s ease;
+  -o-transition: all 0.1s ease;
+  transition: all 0.1s ease;
+}
+
+header .navigationBox li:hover ul.submenu {
+  display: block;
+}
+
+header .navigationBox li ul.submenu li {
+  background: #000000;
+  display: block;
+  float: none;
+  margin: 0;
+  line-height: 20px;
+  border-bottom: 1px solid #7d7676;
+}
+
+header .navigationBox li ul.submenu li a {
+  color: #fff;
+  display: block;
+  text-align: left;
+  padding: 7px 20px;
+  font-size: 13px;
+}
+
+header .navigationBox li ul.submenu li:hover {
+  background: #7d7676;
+}
+
+header .searchbox {
+  float: left;
+  width: 400px;
+}
+
+header .searchbox .searchB {
+  margin-top: 5px;
+  position: relative;
+}
+
+header .searchbox .searchB .fieldHS {
+  width: 100%;
+  background: #fff;
+  border-radius: 4px;
+  border: 0;
+  font-size: 13px;
+  padding: 3px 33px 3px 15px;
+}
+
+header .searchbox .searchB .searchBtn {
+  background: #12496b;
+  height: 100%;
+  padding: 0 9px;
+  color: #fff;
+  border-radius: 0 4px 4px 0;
+  position: absolute;
+  top: 0;
+  right: 0;
+  border: 0;
+  z-index: 1;
+  cursor: pointer;
+}
+
+header .searchbox .searchB .fieldHS:focus,
+header .searchbox .searchB .searchBtn:focus {
+  outline: 0;
+  box-shadow: none;
+}
+
+header.registerheader {
+  padding: 15px 0;
+  border-bottom: 1px solid #ddd;
+}
+
+header.registerheader .right {
+  float: right;
+  margin-top: 3px;
+}
+
+header.frontLoginHeader .signBtn {
+  text-align: right;
+}
+
+
+
+/*-------------------- Menu -------------------*/
+.menu {
+  position: relative;
+}
+
+.menu > ul.submenu {
+  position: absolute;
+  top: 35px;
+  right: -20px;
+  z-index: 999;
+  display: none;
+  width: 160px;
+  padding-top: 13px;
+}
+
+.menu:hover > ul.submenu {
+  display: block;
+}
+
+.menu > ul.submenu::before {
+  content: '\f0d8';
+  position: absolute;
+  top: -18px;
+  right: 23px;
+  z-index: -1;
+  font-family: fontAwesome;
+  font-size: 40px;
+  color: #000;
+}
+
+.menu > ul.submenu > li {
+  line-height: 20px;
+  background-color: #000;
+}
+
+.menu > ul.submenu > li:hover {
+  background-color: #7d7676;
+}
+
+.menu > ul.submenu > li:first-child {
+  border-radius: 4px 4px 0 0;
+}
+
+.menu > ul.submenu > li:last-child {
+  border-radius: 0 0 4px 4px;
+}
+
+.menu > ul.submenu > li > a {
+  display: block;
+  padding: 5px 10px;
+  font-weight: 600;
+  color: #fff;
+  text-align: right;
+}
+
+.menu > ul.submenu > li > a:hover {
+  color: #000;
+  text-decoration: none;
+}
+
+.menu > ul.submenu > li:first-child > a {
+  padding-top: 10px;
+}
+
+.menu > ul.submenu > li:last-child > a {
+  padding-bottom: 10px;
+}
+
+/*-------------------- SignIn SignUp Page -------------------*/
+#root,
+.routesBox,
+.routesBox > div {
+  height: 100%;
+}
+
+.wrapperBox {
+  min-height: 100%;
+  position: relative;
+}
+
+.wrapperBox footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
+.signupContainer {
+  display: block;
+  padding-top: 100px;
+  padding-bottom: 237px;
+}
+
+.signupBox {
+  width: 400px;
+  margin: 0 auto 50px auto;
+  padding-bottom: 20px;
+  border-radius: 4px;
+  -webkit-box-shadow: 0 7px 20px 0 rgba(0, 0, 0, 0.2);
+  box-shadow: 0 7px 20px 0 rgba(0, 0, 0, 0.2);
+}
+
+.signupBox h1 {
+  display: block;
+  font-size: 24px;
+  color: #fff;
+  background: #353535;
+  text-align: center;
+  line-height: 40px;
+  padding: 20px 0;
+  font-weight: 300;
+  border-radius: 4px 4px 0 0;
+  margin: 0 0 30px 0;
+}
+
+.signupBox .signFieldBox {
+  display: block;
+  padding: 0 20px;
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.signupBox .signFieldBox .signfield {
+  width: 100%;
+  padding: 10px 20px 10px 55px;
+  background: #eee;
+  font-size: 13px;
+  border: 0;
+  border-radius: 4px;
+}
+
+.signupBox .signFieldBox .signfield:focus {
+  outline: 0;
+  box-shadow: none;
+}
+
+.signupBox .signFieldBox span {
+  position: absolute;
+  top: 0;
+  left: 20px;
+  width: 40px;
+  height: 100%;
+  text-align: center;
+  line-height: 40px;
+  border-right: 1px solid #ccc;
+}
+
+.signupBox .agree {
+  display: block;
+  padding: 0 20px;
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.signupBox .agree input[type='checkbox'] {
+  position: relative;
+  top: 2px;
+  margin-right: 10px;
+}
+
+.signupBox .agree a {
+  color: #2a81b6;
+}
+
+.signupBox .agree a:hover {
+  text-decoration: underline;
+}
+
+.signupBox .signBtn {
+  background: #2a81b6;
+  color: #fff;
+  display: block;
+  text-align: center;
+  border: 0;
+  width: 100%;
+  padding: 15px 20px;
+  border-radius: 4px;
+  font-size: 18px;
+  font-weight: 300;
+  cursor: pointer;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.signupBox .signBtn:hover {
+  background: #2a556f;
+}
+
+.signupBox .fancy {
+  text-align: center;
+  overflow: hidden;
+  margin: 0 0 20px 0;
+}
+
+.signupBox .fancy span {
+  display: inline-block;
+  position: relative;
+}
+
+.signupBox .fancy span:before,
+.fancy span:after {
+  content: '';
+  position: absolute;
+  height: 5px;
+  border-bottom: 0px solid #b9b9b9;
+  border-top: 1px solid #dcd9d9;
+  top: 10px;
+  width: 150px;
+}
+
+.signupBox .fancy span:before {
+  right: 100%;
+  margin-right: 15px;
+}
+
+.signupBox .fancy span:after {
+  left: 100%;
+  margin-left: 15px;
+}
+
+.signupBox .signgreyBtn {
+  background: #c1c0c0;
+  color: #000;
+  display: block;
+  text-align: center;
+  border: 0;
+  width: 100%;
+  padding: 15px 20px;
+  border-radius: 4px;
+  font-size: 18px;
+  font-weight: 300;
+  cursor: pointer;
+}
+
+.signupBox .signgreyBtn:focus,
+.signupBox .signBtn:focus {
+  outline: 0;
+  box-shadow: none;
+}
+
+.field {
+  width: 100%;
+  padding: 10px 20px 10px 20px;
+  background: #f7f7f7;
+  font-size: 13px;
+  border: 0;
+  border-radius: 4px;
+  margin-bottom: 10px;
+}
+
+.field:focus {
+  outline: 0;
+  box-shadow: none;
+}
+
+.registerSection {
+  padding: 50px 0;
+}
+
+.registerHeadingBox {
+  width: 700px;
+  margin: 0 auto 30px auto;
+  text-align: center;
+  border-bottom: 1px solid #e6e6e6;
+  padding-bottom: 20px;
+}
+
+.registerHeadingBox h1 {
+  font-size: 26px;
+  font-weight: 300;
+  color: #2a81b6;
+  margin: 0 0 10px 0;
+}
+
+.registerHeadingBox p {
+  font-size: 16px;
+  color: #000;
+  margin: 0;
+}
+
+.registerFormbox {
+  width: 700px;
+  margin: 0 auto;
+  margin-bottom: 50px;
+}
+
+.registerFormbox span {
+  font-size: 11px;
+  width: 100%;
+}
+
+.registerFormbox label {
+  font-size: 13px;
+  font-weight: 600;
+  color: #000;
+  display: block;
+}
+
+.registerFormbox .bottomBox {
+  padding-top: 20px;
+  margin-top: 20px;
+  border-top: 1px solid #e6e6e6;
+}
+
+.autocomplete-dropdown-container-main {
+  position: relative;
+}
+
+.fieldBoxRow .full .autocomplete-dropdown-container {
+  position: absolute;
+  z-index: 1;
+  left: 150px;
+}
+
+.fieldBoxRow .full .autocomplete-dropdown-container-main .row {
+  margin: 0;
+}
+
+.fieldBoxRow .full .autocomplete-dropdown-container-main .row > div {
+  padding: 0;
+}
+
+.ijn label.field {
+  margin-right: 15px;
+}
+
+.registerFormbox .fieldBoxRow.section1.twofield span.error {
+  display: inline-block;
+  width: 40%;
+}
+
+.registerFormbox .fieldBoxRow.section1.twofield span.error:last-child {
+  padding-left: 110px;
+}
+
+/*-------------------- Footer -------------------*/
+footer {
+  width: 100%;
+  display: block;
+  padding: 40px 0 0 0;
+  background: #fff;
+  border-top: 1px solid #ccc;
+}
+
+.footLeft {
+  display: block;
+}
+
+.footLeft p {
+  font-size: 14px;
+  color: #000;
+  font-weight: 600;
+  margin: 0 0 5px 0;
+}
+
+.footLeft p a {
+  color: #000;
+}
+
+.footLeft p a:hover {
+  text-decoration: underline;
+}
+
+.footLeft ul.social {
+  display: block;
+  padding-top: 0px;
+}
+
+.footLeft ul.social li {
+  display: inline-block;
+  font-size: 15px;
+  margin-right: 20px;
+}
+
+.footLeft ul.social li a {
+  color: #000000;
+}
+
+.footLeft ul.social li a:hover {
+  color: #000;
+}
+
+.footRight {
+  display: block;
+  text-align: right;
+}
+
+.footRight .footerLogo {
+  width: 200px;
+  float: right;
+}
+
+.copyright {
+  display: block;
+  background: #a3a8ab;
+  font-size: 12px;
+  color: #fff;
+  padding: 10px 0;
+  margin-top: 30px;
+}
+
+/*-------------------- Quill Mention -------------------*/
+
+.mention {
+  color: #000;
+  background: #e3f1fb;
+  border: 1px solid #000000;
+  border-radius: 4px;
+  padding: 5 5px;
+}
+
+
+.ql-mention-list-container {
+  
+  border: 1px solid #f0f0f0;
+  border-radius: 4px;
+  background-color: #fff;
+  box-shadow: 0 2px 12px 0 rgb(30 30 30 / 8%);
+  z-index: 9001;
+  }
+
+.ql-mention-list {
+  background-color: #fefefe;
+  display: block;
+  color: #0ff;
+  color: #52687e;
+}
+
+
+.ql-mention-list-item {
+  height: 32px;
+  line-height: 32px;
+  font-size: 12px;
+  padding: 0 20px;
+  vertical-align: middle;
+}
+
+.ql-mention-list-item.selected {
+  background-color: #d3e1eb;
+  text-decoration: none;
+}
+
+/*-------------------- Dashboard -------------------*/
+.welcomeContainer {
+  padding: 50px 0;
+}
+
+.welcomeDescription {
+  max-height: 300px;
+  min-height: 300px;
+  padding: 20px;
+  margin-bottom: 30px;
+  border-radius: 4px;
+  border: 1px solid #e6e6e6;
+  box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+.welcomeDescriptionforCast {
+  max-height: 700px;
+  min-height: 431px;
+  padding: 20px;
+  margin-bottom: 30px;
+  border-radius: 4px;
+  border: 1px solid #e6e6e6;
+  box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+.welcomeContainer h3 {
+  font-size: 26px;
+  font-weight: 300;
+  line-height: 20px;
+  margin: 0 0 20px 0;
+  padding-bottom: 16px;
+  position: relative;
+  border-bottom: 1px solid #efefef;
+}
+
+.welcomeDD h3 {
+  font-size: 20px;
+  font-weight: 700;
+  text-transform: uppercase;
+  line-height: 20px;
+  margin: 0 0 20px 0;
+  padding-bottom: 0;
+  border-bottom: 0;
+}
+
+.welcomeDD {
+  min-height: 250px;
+}
+
+.welcomeDescription p,
+.welcomeDD p {
+  margin-bottom: 10px;
+  line-height: 18px;
+  color: #000;
+  font-size: 13px;
+}
+
+.welcomeDescription a,
+.welcomeDD a,
+.welcomeDescription a:not([href]):not([tabindex]),
+.welcomeDD a:not([href]):not([tabindex]) {
+  color: #0c87de;
+}
+
+.welcomeDescription a:hover,
+.welcomeDD a:hover,
+a:not([href]):not([tabindex]):hover {
+  text-decoration: underline;
+  color: #0c87de;
+}
+
+.welcomedesc ul {
+  margin: 0 0 10px 0;
+}
+
+.welcomeDescription ul li {
+  font-size: 13px;
+  line-height: 18px;
+  margin-bottom: 10px;
+  position: relative;
+}
+
+/*.welcomeDescription ul li:before {
+	content: '\f111';
+	font-family: fontAwesome;
+	position: absolute;
+	left: 0;
+	top: 1px;
+	font-size: 4px;
+	color: #000;
+}*/
+/*.dashInner {
+	height: 200px;
+}*/
+.dashInner.bigBox {
+  height: 860px;
+}
+
+.welcomeDescription .cr1 .react-bs-table-container table td {
+  border-top: 0;
+  border-bottom: 0;
+}
+
+ul.teamActivityList li {
+  padding-left: 50px;
+  min-height: 50px;
+  position: relative;
+}
+
+ul.teamActivityList li:before {
+  display: none;
+}
+
+ul.teamActivityList li img {
+  margin-right: 10px;
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  position: absolute;
+  left: 0;
+  z-index: 0;
+}
+
+ul.teamActivityList li span {
+  float: left;
+  font-size: 13px;
+  width: 90%;
+}
+
+ul.teamActivityList li .activityTime {
+  display: block;
+  font-size: 12px;
+  float: right;
+  margin-right: 20px;
+}
+
+.welcomeDescription ul.fc li {
+  padding-left: 0;
+}
+
+.welcomeDescription ul.fc li:before {
+  display: none;
+}
+
+.welcomeDescription.moreheight {
+  max-height: 350px;
+}
+
+.welcomeDescription.heightauto {
+  max-height: none;
+  min-height: auto;
+  height: auto;
+}
+
+.welcomeDescription .svgGraph {
+  position: relative;
+}
+
+.welcomeDescription .svgGraph ul {
+  list-style: none;
+  position: absolute;
+  right: -9px;
+  top: 60px;
+  width: 250px;
+  z-index: 0;
+}
+
+.welcomeDescription .svgGraph ul li {
+  font-size: 14px;
+  margin: 0;
+  padding: 0;
+}
+
+.welcomeDescription .svgGraph ul li strong {
+  /* display: block; */
+}
+
+.welcomeDescription .svgGraph ul li:before {
+  display: none;
+}
+
+.welcomeDescription h3 a.link {
+  position: absolute;
+  right: 0px;
+  top: -2px;
+  z-index: 0;
+  font-size: 13px;
+  color: #0c87de;
+  font-weight: 600;
+}
+
+.welcomeDescription .dashInner .bidDate {
+  float: right;
+  margin-right: 40px;
+  width: 200px;
+}
+
+.welcomeDescriptionforCast .forcastH {
+  margin-bottom: 10px;
+  display: inline-block;
+}
+
+.welcomeDescription.whbg table {
+  width: 100%;
+  table-layout: fixed;
+}
+
+.welcomeDescription.whbg table td,
+.welcomeDescription.whbg table th {
+  padding: 5px;
+  font-size: 13px;
+  vertical-align: top;
+  line-height: 18px;
+}
+
+.welcomeDescription.whbg table th span {
+  display: block;
+  font-weight: normal;
+  font-size: 10px;
+  line-height: 6px;
+}
+
+.welcomeDescription.welcomeDescriptionforCast ul.rabd {
+  padding-top: 10px;
+}
+
+.welcomeDescription.welcomeDescriptionforCast ul.rabd li span.one {
+  width: 50%;
+  display: inline-block;
+}
+
+.welcomeDescription.bdm th {
+  padding-bottom: 10px;
+}
+
+.welcomeDescription.bdm th,
+.welcomeDescription.bdm td {
+  font-size: 13px;
+}
+
+/*-------------------- Contact Company List -------------------*/
+.contactBox {
+  padding: 10px 0 5px 0;
+}
+
+.sidebarBox {
+  display: block;
+}
+
+.sidebarBox .heading2 {
+  margin-top: 0;
+}
+
+.sidebarBox ul.sidebarlist {
+  display: block;
+}
+
+.sidebarBox ul.sidebarlist li {
+  display: block;
+  font-size: 15px;
+  color: #000;
+  margin-bottom: 16px;
+}
+
+.sidebarBox ul.sidebarlist li a {
+  color: #000000;
+  font-weight: 600;
+}
+
+.sidebarBox ul.sidebarlist li a:hover {
+  text-decoration: underline;
+}
+
+.sidebarBox ul.sidebarlist li .nav-link a {
+  padding: 0 2px;
+}
+
+.sidebarBox ul.sidebarlist li .nav-link.active a {
+  color: #000;
+  font-weight: 700;
+}
+
+.rightTableBox {
+  margin-bottom: 50px;
+}
+
+.rightTableBox .cardBody {
+  border-left: 1px solid #e8e8e8;
+  padding: 0 0 0 20px;
+}
+
+.react-bs-table-container .react-bs-table .react-bs-container-header table thead th {
+  font-size: 12px;
+  font-weight: 600;
+  background: #f5f5f5;
+  padding: 5px;
+  line-height: 18px;
+  color: #000;
+  overflow: visible;
+  white-space: normal;
+  text-overflow: initial;
+  width: 220px;
+  border-bottom: 0;
+}
+
+.react-bs-table-container .react-bs-table .react-bs-container-body table tbody td {
+  padding: 5px;
+  font-size: 12px;
+  line-height: 18px;
+  color: #000;
+  word-break: break-word;
+  overflow: visible;
+  white-space: normal;
+  text-overflow: initial;
+  width: 220px;
+  border-bottom: 0;
+}
+
+.react-bs-table-container .react-bs-table .react-bs-container-body table tbody td span {
+  display: block;
+  line-height: 18px;
+}
+
+.react-bs-table-container .react-bs-table .react-bs-container-body table tbody td p {
+  margin: 0;
+  font-size: 13px;
+}
+
+/*.react-bs-table-container .react-bs-table .react-bs-container-body table tbody td a {
+	text-decoration: underline;
+}
+.react-bs-table-container .react-bs-table .react-bs-container-body table tbody td a:hover {
+	text-decoration: none;
+}*/
+.react-bs-table-container .react-bs-table-pagination .pagination li a.page-link {
+  font-size: 13px;
+  font-weight: 600;
+  color: #000000;
+  background: #fff;
+}
+
+.react-bs-table-container .react-bs-table-pagination .pagination li.active a.page-link {
+  background: #000000;
+  color: #fff;
+}
+
+.table-striped tbody tr:nth-of-type(odd) {
+  background-color: rgba(0, 0, 0, 0.01);
+}
+
+.table-hover tbody tr:hover {
+  background-color: rgba(0, 0, 0, 0.02);
+}
+
+.table-responsive tfoot td {
+  background: #e5e5e2;
+}
+
+/*-------------------- Settings -------------------*/
+.formBox .heading2 {
+  margin-top: 0;
+}
+
+.infoHeading {
+  text-transform: uppercase;
+  font-size: 14px;
+  color: #9c9c9c;
+  margin: 0 0 10px 0;
+}
+
+.fieldBoxRow {
+  display: block;
+}
+
+.fieldBoxRow.section1 label {
+  width: 150px;
+  display: inline-block;
+  font-size: 14px;
+  font-weight: 600;
+  float: left;
+  margin-top: 10px;
+}
+
+.fieldBoxRow.section2 label {
+  width: 200px;
+  display: inline-block;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.fieldBoxRow.section2 p {
+  margin: 0;
+  display: inline-block;
+  font-size: 14px;
+  font-weight: 600;
+  color: #000000;
+}
+
+.fieldBoxRow.section1 span.error {
+  margin-bottom: 10px;
+  padding-left: 150px;
+}
+
+.fieldBoxRow.section2 span.error {
+  margin-bottom: 10px;
+  padding-left: 200px;
+}
+
+.fieldBoxRow .field {
+  background: #fff;
+  border: 1px solid #dcdcdc;
+}
+
+.fieldBoxRow .field.full {
+  width: 350px;
+}
+
+.fieldBoxRow .select.full {
+  width: 350px;
+  display: inline-block;
+  margin-bottom: 10px;
+}
+
+.fieldBoxRow .field.small {
+  width: 180px;
+}
+
+.fieldBoxRow small {
+  font-size: 14px;
+  margin: 0 10px 0 10px;
+  font-weight: 600;
+}
+
+.fieldBoxRow a {
+  display: inline-block;
+  vertical-align: text-top;
+  position: relative;
+}
+
+.fieldBoxRow a > i {
+  color: #ccc;
+  font-size: 20px;
+}
+
+.fieldBoxRow a .tooltipBox {
+  width: 200px;
+  background: #dcdcdc;
+  border-radius: 4px;
+  color: #000;
+  font-size: 11px;
+  text-align: left;
+  padding: 8px 12px;
+  line-height: 15px;
+  position: absolute;
+  top: -12px;
+  left: 30px;
+  z-index: 1;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.fieldBoxRow a .tooltipBox i {
+  position: absolute;
+  left: -8px;
+  top: 7px;
+  color: #dcdcdc;
+  font-size: 30px;
+}
+
+.fieldBoxRow a:hover .tooltipBox {
+  opacity: 1;
+  visibility: visible;
+}
+
+.fieldBoxRow a + span {
+  margin-left: 30px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.fieldBoxRow a + span i {
+  margin-right: 6px;
+}
+
+.fieldBoxRow.section2 .btn {
+  margin-top: 20px;
+}
+
+.fieldBoxRow .fileBox {
+  width: 350px;
+  height: 60px;
+  display: inline-block;
+  position: relative;
+}
+
+.fieldBoxRow .fileBox input[type='file'] {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 0;
+  opacity: 0;
+}
+
+.fieldBoxRow .fileBox .uploadText {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  text-align: center;
+  line-height: 60px;
+  font-size: 14px;
+  color: #000;
+  background: #eaeaea;
+  border-radius: 4px;
+}
+
+.fieldBoxRow .shareholder {
+  display: inline-block;
+  width: 600px;
+  position: relative;
+}
+
+.fieldBoxRow .shareholder a.removeBtn {
+  position: absolute;
+  right: -20px;
+  top: 9px;
+  z-index: 0;
+  color: #000000;
+}
+
+.fieldBoxRow .shareholder a.removeBtn i {
+  color: #000000;
+}
+
+.fieldBoxRow.section1.phoneBox {
+  position: relative;
+  padding-left: 150px;
+}
+
+.fieldBoxRow.section1 .add-company-btn {
+  display: inline-block;
+  padding-bottom: 10px;
+}
+
+.fieldBoxRow.section1.phoneBox label {
+  position: absolute;
+  left: 0;
+}
+
+.infoHeadingRC {
+  font-size: 18px;
+  color: #333;
+  margin: 0 0 20px 0;
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 10px;
+}
+
+.form-group .form-control {
+  font-size: 15px;
+}
+
+.modal .modal-dialog {
+  max-width: 720px;
+}
+
+.modal .modal-header {
+  background: #fff;
+  padding: 16px 30px;
+}
+
+.modal-header .close {
+  font-size: 30px;
+  color: #000;
+  opacity: 1;
+}
+
+.modal-header .close:focus {
+  outline: 0;
+}
+
+.modal-header .close span {
+  color: #000;
+}
+
+.modal .modal-footer {
+  padding: 16px 30px;
+}
+
+.modal .modal-header .modal-title {
+  font-size: 20px;
+  font-weight: 400;
+  margin: 0;
+  color: #000;
+  text-align: left;
+  letter-spacing: 0.5px;
+}
+
+.modal .fieldBox {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.modal .fieldBox label {
+  font-size: 13px;
+  font-weight: 600;
+  color: #000;
+  display: block;
+}
+
+.modal .fieldBox .field {
+  border: 1px solid #ced4da;
+  background: #fff;
+  padding: 7px 10px;
+}
+
+.modal .shareholder {
+  position: relative;
+}
+
+.modal .shareholder a.removeBtn {
+  position: absolute;
+  right: -6px;
+  top: 9px;
+  z-index: 0;
+  color: #000000;
+}
+
+.modal .shareholder a.removeBtn i {
+  color: #000000;
+}
+
+.modal a:not([href]):not([tabindex]) {
+  color: #0c87de;
+}
+
+.modal a:not([href]):not([tabindex]):hover {
+  color: #0c87de;
+  text-decoration: underline;
+}
+
+.modal .addAnotherPhoneBtn {
+  display: inline-block;
+  padding-bottom: 10px;
+}
+
+.modal .addNewCompany {
+  float: right;
+  margin-bottom: 10px;
+}
+
+.form-group input[name='isEmployee'] {
+  display: inline-block;
+  float: right;
+  width: 20px;
+  height: 20px;
+  margin-left: 10px;
+}
+
+.form-group .check {
+  /*padding-top: 33px;*/
+}
+
+.form-group .check label {
+  margin: 0;
+}
+
+span.error {
+  font-size: 11px;
+  color: #f52525;
+  display: block;
+}
+
+/*-------------------- Contact Details -------------------*/
+.addcompany {
+  padding: 50px 0 0 0;
+}
+
+.contactDetailSidebar {
+  height: 100%;
+  display: block;
+  position: relative;
+  padding-right: 20px;
+  border-right: 1px solid #dcdcdc;
+}
+
+.contactDetailSidebar .editBtn {
+  font-size: 20px;
+}
+
+.contactDetailSidebar .profilePN {
+  display: block;
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+}
+
+.contactDetailSidebar .profilePic {
+  width: 60px;
+  height: 60px;
+  display: block;
+  border-radius: 100%;
+  overflow: hidden;
+  float: left;
+}
+
+.contactDetailSidebar .profilePic img {
+  width: 100%;
+  height: auto;
+}
+
+.contactDetailSidebar .profileName {
+  padding-left: 80px;
+  display: block;
+}
+
+.contactDetailSidebar h3 {
+  margin: 0;
+  font-size: 20px;
+  color: #000;
+}
+
+.contactDetailSidebar p {
+  margin: 0;
+  color: #000;
+}
+
+.contactDetailSidebar a {
+  color: #0c87de;
+}
+
+.contactDetailSidebar a:not([href]):not([tabindex]) {
+  color: #0c87de;
+}
+
+.contactDetailSidebar a:hover {
+  text-decoration: underline;
+  color: #0c87de;
+}
+
+.contactDetailSidebar .contactDetail,
+.contactDetailSidebar .venderInfo {
+  display: block;
+  margin-bottom: 20px;
+}
+
+.contactDetail .innerbox {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.contactDetail small {
+  color: #000;
+}
+
+.contactDetail p strong {
+  width: 80px;
+  display: inline-block;
+}
+
+.showHide {
+  display: block;
+  padding: 10px 0;
+}
+
+.projectBox {
+  display: block;
+  /* margin-bottom: 20px; */
+  margin-bottom: -25px;
+}
+
+.projectBox h6,
+.contactDetail h6 {
+  margin: 10px 0 10px 0;
+  color: #000;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.projectBox .contact-content {
+  line-height: 26px;
+}
+
+.projectBox .contact-content span {
+  font-size: 11px;
+  color: #989898;
+}
+
+.projectBox .contact-content span:first-child {
+  width: 50%;
+  font-size: 14px;
+  font-style: normal;
+  display: inline-block;
+}
+
+.projectBox .contact-content a span:first-child {
+  color: #0c87de;
+  text-decoration: none;
+}
+
+.projectBox .contact-content a span:last-child,
+.projectBox .contact-content a:hover span:last-child {
+  text-decoration: none;
+}
+
+.projectBox .contact-content a span.addres-det {
+  color: #0c87de;
+}
+
+.projectBox .contact-content a span.addres-det:hover {
+  text-decoration: underline;
+}
+
+.venderInfo .btn.right {
+  margin-top: 10px;
+}
+
+.venderInfo .btnBox {
+  display: block;
+  text-align: right;
+  padding-top: 20px;
+}
+
+.venderInfo .addNewCompany {
+  float: right;
+  color: #000000;
+}
+
+.venderInfo .addNewCompany:hover {
+  text-decoration: underline;
+}
+
+.innerbox.company {
+  padding: 10px 0 20px 0;
+  border-top: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+}
+
+.projectTabs {
+  margin-bottom: 50px;
+}
+
+.projectTabs #controlled-tab-example {
+  background: #fff;
+}
+
+.projectTabs #controlled-tab-example ul.nav-tabs li {
+  background: #fff;
+  min-width: 123px;
+  border-radius: 4px 4px 0 0;
+  margin-right: 10px;
+  border: 2px solid #000000;
+}
+
+.projectTabs #controlled-tab-example ul.nav-tabs li a {
+  display: block;
+  padding: 5px 20px;
+  text-align: center;
+  text-decoration: none;
+  color: #000000;
+}
+
+.projectTabs #controlled-tab-example .tab-content {
+  margin-top: -3px;
+  position: relative;
+  z-index: 0;
+  background: #f7f7f7;
+  padding: 15px;
+  border: 1px solid #f3f3f3;
+}
+
+.projectTabs .nav-tabs li.active {
+  background-color: #000000 !important;
+}
+
+.projectTabs .nav-tabs li:hover,
+.projectTabs .nav-tabs li:active,
+.projectTabs .nav-tabs li:focus,
+.projectTabs .nav-tabs li:active:focus {
+  background-color: #000000 !important;
+  color: rgb(255, 255, 255) !important;
+}
+
+.projectTabs .nav-tabs li.active a,
+.projectTabs .nav-tabs li a:hover,
+.projectTabs .nav-tabs li a:focus,
+.projectTabs .nav-tabs li a:active:focus,
+.projectTabs .nav-tabs li:hover a {
+  color: rgb(255, 255, 255) !important;
+}
+
+.projectTabs .controlled-tab-example {
+  margin-top: 30px;
+}
+
+.projectTabs .quill .ql-editor {
+  min-height: 150px;
+}
+
+.quill .ql-editor {
+  background: #ffffff;
+}
+
+.projectTabs .pageinfo h2 {
+  margin: 0 0 20px 0;
+  font-size: 20px;
+}
+
+.projectTabs ul.nav-tabs li {
+  position: relative;
+}
+
+.projectTabs ul.nav-tabs li:before {
+  font-family: fontAwesome;
+  font-size: 20px;
+  color: #000000;
+  position: absolute;
+  left: 51px;
+  top: -26px;
+  z-index: 0;
+}
+
+.detailMenu li::marker {
+  content: "";
+}
+
+
+.projectTabs .tab-content .outputBox {
+  display: block;
+  padding: 0 0 0 50px;
+  margin-bottom: 15px;
+  position: relative;
+}
+
+.projectTabs .tab-content .outputBox:before {
+  content: '';
+  width: 1px;
+  height: 100%;
+  background: #ccc;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 19px;
+  z-index: 0;
+}
+
+.projectTabs .tab-content .outputBox.emailHtml:after,
+.projectTabs .tab-content .outputBox.notesHtml:after,
+.projectTabs .tab-content .outputBox.scheduleHtml:after {
+  font-family: fontAwesome;
+  position: absolute;
+  top: 50%;
+  left: 0px;
+  width: 40px;
+  height: 40px;
+  margin-top: -20px;
+  text-align: center;
+  line-height: 39px;
+  color: #000;
+  background: #fff;
+  border-radius: 100%;
+  border: 1px solid #ccc;
+}
+
+.projectTabs .tab-content .outputBox .outputinner p {
+  font-size: 13px;
+  color: #000000;
+  margin: 0 0 10px 0;
+}
+
+.projectTabs .tab-content .outputBox .outputinner p br {
+  display: none;
+}
+
+.projectTabs .tab-content .outputBox .outputinner .outputPic {
+  width: 40px;
+  height: 40px;
+  display: inline-block;
+  border-radius: 100%;
+  background: #eee;
+  overflow: hidden;
+  float: left;
+  margin-right: 20px;
+}
+
+.projectTabs .tab-content .outputBox .outputinner img {
+  max-width: 200px;
+  height: auto;
+  display: inline-block;
+  margin-right: 10px;
+  margin-bottom: 10px;
+}
+
+.projectTabs .tab-content .outputBox .outputinner .outputPic img {
+  width: 100%;
+  height: 40px;
+  max-width: initial;
+}
+
+.projectTabs .tab-content .outputBox .dateBox {
+  font-size: 11px;
+  color: #000;
+  display: block;
+}
+
+.projectTabs .tab-content .outputBox .outputinner {
+  display: block;
+  background: #fff;
+  padding: 24px 24px;
+  border-radius: 6px;
+}
+
+.projectTabs .tab-content .outputBox .outputinner .username {
+  display: inline-block;
+  margin: 0;
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.projectTabs .tab-content .outputBox .outputinner span.ToEmail {
+  border-bottom: 1px solid rgb(204, 204, 204);
+  margin-right: 10px;
+  display: inline-block;
+}
+
+.projectTabs .tab-content .outputBox .outputinner .headBox {
+  margin-bottom: 10px;
+  border-bottom: 1px solid #eee;
+  padding-bottom: 10px;
+}
+
+.projectTabs .tab-content .outputBox .sdata {
+  font-size: 13px;
+  color: #000000;
+  display: block;
+}
+
+.projectTabs .tab-content .outputBox.emailHtml h1,
+.projectTabs .tab-content .outputBox.emailHtml h2,
+.projectTabs .tab-content .outputBox.emailHtml h3,
+.projectTabs .tab-content .outputBox.emailHtml h4,
+.projectTabs .tab-content .outputBox.emailHtml h5,
+.projectTabs .tab-content .outputBox.emailHtml h6,
+.projectTabs .tab-content .outputBox.notesHtml h1,
+.projectTabs .tab-content .outputBox.notesHtml h2,
+.projectTabs .tab-content .outputBox.notesHtml h3,
+.projectTabs .tab-content .outputBox.notesHtml h4,
+.projectTabs .tab-content .outputBox.notesHtml h5,
+.projectTabs .tab-content .outputBox.notesHtml h6 {
+  margin: 10px 0;
+}
+
+.projectTabs .tab-content .outputBox.notesHtml ul.w1 li {
+  display: inline-block;
+  width: 75px;
+  float: left;
+  margin-right: 10px;
+  font-size:10px;
+}
+
+.projectTabs .tab-content .outputBox.notesHtml ul.w1 li img {
+  width: 75px;
+  height: auto;
+}
+
+.editCloseBox {
+  float: right;
+  margin: 20px 20px 0 0;
+}
+
+.editCloseBox ul li {
+  float: left;
+  margin-left: 10px;
+}
+
+.customFieldsEditBox .pDetail p strong {
+  width: auto;
+  margin-right: 10px;
+  display: inline-block;
+  font-style: normal;
+  vertical-align: top;
+}
+
+.customFieldsEditBox .pDetail p {
+  display: inline-block;
+  width: 49%;
+  color: #000000;
+  margin-bottom: 7px;
+  padding-right: 10px;
+  vertical-align: top;
+}
+
+.pDetail .css-10nd86i .css-15k3avv {
+  font-size: 12px;
+}
+
+.pDetail .css-10nd86i .css-15k3avv span,
+.pDetail .css-10nd86i .css-15k3avv small {
+  font-size: 10px;
+}
+
+.pDetail .pDetailTableBox p .peojectTeamD:last-child small span:last-child {
+  display: none;
+}
+
+.pDetail .removeBtn {
+  position: relative;
+  top: 30px;
+}
+
+/*-------------------- Others -------------------*/
+.projectListTable {
+  margin-bottom: 50px;
+  /* border-top: 1px solid #ddd; */
+  padding-top: 20px;
+}
+
+/*.searchbar {
+  margin-bottom: 30px;
+}*/
+
+.projectSearchBarBox {
+  padding-top: 30px;
+  text-align: right;
+}
+
+.tableSection,
+.reportTableSection {
+  padding: 0;
+}
+
+.react-bs-table table td,
+.react-bs-table table th {
+  overflow: visible;
+  white-space: normal;
+  text-overflow: initial;
+}
+
+.tableSection .react-bs-table table td,
+.tableSection .react-bs-table table th,
+.reportTableSection .react-bs-table table td,
+.reportTableSection .react-bs-table table th {
+  overflow: visible;
+  white-space: normal;
+  text-overflow: initial;
+  width: 220px;
+  border-bottom: 0;
+}
+
+/*.reportTableSection.table-responsive {
+  overflow-x: hidden;
+}*/
+
+.usersAndRoles .tableSection .react-bs-table table td:nth-child(1),
+.usersAndRoles .tableSection .react-bs-table table th:nth-child(1),
+.usersAndRoles .tableSection .react-bs-table table td:nth-child(2),
+.usersAndRoles .tableSection .react-bs-table table th:nth-child(2) {
+  position: absolute;
+  left: 15px;
+  z-index: 1;
+  background: #fff;
+  height: 44px;
+}
+
+.usersAndRoles .tableSection .react-bs-table table th:nth-child(2) {
+  height: 82px;
+}
+
+.tableSection .react-bs-table table td:nth-child(1),
+.tableSection .react-bs-table table th:nth-child(1),
+.tableSection .react-bs-table table td:nth-child(2),
+.tableSection .react-bs-table table th:nth-child(2) {
+  position: absolute;
+  left: 15px;
+  z-index: 1;
+  background: #fff;
+}
+
+
+.tableSection .react-bs-container-body,
+.tableSection .react-bs-container-header {
+  padding-left: 208px;
+}
+
+.tableSection .react-bs-table .react-bs-container-header table th {
+  vertical-align: top !important;
+  height: 82px;
+}
+
+.tableSection colgroup {
+  display: none;
+}
+
+.compactTable{
+  border-collapse:collapse;
+  border-spacing:0 0px;
+  padding: 0px;
+  line-height: 80%;
+}
+
+.compactHeader{
+  margin-left: 0px;
+  padding: 0px;
+  border-left: 0 !important;
+  padding-left: 0 !important;
+}
+
+.projectListTable .tabs .nav-tabs {
+  margin-bottom: 5px;
+}
+
+.projectListTable .tabs .nav-tabs .nav-item {
+  width: 150px;
+  margin-right: 5px;
+}
+
+.projectListTable .tabs .nav-tabs .nav-item a {
+  display: block;
+  font-size: 15px;
+  font-weight: 600;
+  color: #000;
+  text-align: center;
+  padding: 14px 15px;
+  border-right: 1px solid #ccc;
+  border-left: 1px solid #ccc;
+  border-top: 1px solid #ccc;
+}
+
+.projectListTable .tabs .nav-tabs .nav-item a.active {
+  background: #000000;
+  color: #fff;
+}
+
+.ant-notification {
+  z-index: 999999 !important;
+  bottom: 100px !important;
+  right: auto !important;
+  left: 50% !important;
+  top: auto !important;
+  margin-left: -160px;
+  margin-right: 0;
+}
+
+.search_list {
+  position: absolute;
+  background: #fff;
+  width: 100%;
+  padding: 15px;
+  z-index: 1;
+  height: auto;
+  right: 0px;
+  left: 5px;
+  top: 35px;
+  border-radius: 4px;
+  border: 1px solid #e6e6e6;
+  box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  max-width: calc(100% - 5px);
+}
+
+.search_list ul li {
+  color: #3181b6;
+  font-size: 13px;
+  margin-bottom: 10px;
+}
+
+.search_list ul li.msg {
+  font-size: 13px;
+  color: #888;
+  line-height: 18px;
+}
+
+.search_list ul li.recentsearch {
+  text-transform: uppercase;
+  color: #000;
+  font-weight: 600;
+}
+
+.search_list ul li > span {
+  display: block;
+  text-transform: uppercase;
+  color: #000 !important;
+  font-weight: 600;
+}
+
+.search_list ul li > ul.search_dt_type {
+  display: block;
+  padding-top: 3px;
+}
+
+.search_list ul li > ul.search_dt_type li {
+  font-size: 13px;
+  margin-bottom: 0;
+}
+
+.search_list ul li > ul.search_dt_type li a {
+  text-transform: none;
+  color: #3181b6 !important;
+}
+
+.projectListTable .tab-content .addButton {
+  position: absolute;
+  right: 10px;
+  top: 0;
+  z-index: 0;
+}
+
+/*-------------------- Project Detail -------------------*/
+.projectDetailSidebar {
+  height: 100%;
+  display: block;
+  position: relative;
+  padding-right: 20px;
+  border-right: 1px solid #dcdcdc;
+}
+
+.projectDetailSidebar .editBtn {
+  float: right;
+  font-size: 20px;
+  color: #000000;
+  position: absolute;
+  right: 20px;
+  top: 0;
+  z-index: 0;
+}
+
+.projectDetailSidebar .profilePN {
+  display: block;
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+}
+
+.projectDetailSidebar .profilePic {
+  width: 60px;
+  height: 60px;
+  display: block;
+  border-radius: 100%;
+  overflow: hidden;
+  float: left;
+  background: #eee;
+}
+
+.projectDetailSidebar .profilePic img {
+  width: 100%;
+  height: auto;
+}
+
+.projectDetailSidebar .profileName {
+  padding-left: 80px;
+  padding-top: 5px;
+  display: block;
+}
+
+.projectDetailSidebar h3 {
+  margin: 0;
+  padding-right: 20px;
+  font-size: 20px;
+  color: #000;
+}
+
+.projectDetailSidebar .profileSubInfo,
+.projectDetailSidebar .profileStatus {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  column-gap: 24px;
+}
+
+.projectDetailSidebar .profileStatus {
+  flex-grow: 1;
+  justify-content: space-between;
+  row-gap: 4px;
+}
+
+.projectDetailSidebar p {
+  margin: 0;
+  color: #000000;
+}
+
+/*.projectDetailSidebar a {
+	color: #000000;
+}*/
+/*.projectDetailSidebar a:not([href]):not([tabindex]) {
+	color: #000000;
+}*/
+.projectDetailSidebar a:hover {
+  text-decoration: underline;
+}
+
+.projectDetailSidebar .pDetail {
+  display: block;
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.projectDetailSidebar .pDetail .innerbox {
+  display: block;
+  font-size: 13px;
+  color: #000000;
+  margin-bottom: 10px;
+}
+
+.projectDetailSidebar .pDetail small {
+  color: #000;
+  font-size: inherit;
+}
+
+.projectDetailSidebar .pDetail p strong {
+  display: inline-block;
+  margin-right: 15px;
+}
+
+.projectDetailSidebar .pDetail h6 {
+  margin: 0 0 10px 0;
+  color: #000;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.projectDetailSidebar .pDetail .mapBox {
+  background: #eee;
+  height: 150px;
+}
+
+.projectDetailSidebar .pDetail .mapBox .google-map > div {
+  position: relative !important;
+}
+
+.projectDetailSidebar > .pDetail .addressBox-lead {
+  padding-right: 40px;
+}
+
+.projectDetailSidebar > .pDetail .addressBox-lead > .editBtn {
+  right: 35px;
+}
+
+.dRightBottom {
+  display: block;
+  margin-bottom: 20px;
+}
+
+.dRightBottom .btn {
+  margin-right: 20px;
+}
+
+.projectDetailSidebar .pDetail .pDetailTableBox {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.projectDetailSidebar .pDetail .pDetailTableBox table {
+  width: 100%;
+}
+
+.projectDetailSidebar .pDetail .pDetailTableBox table td {
+  padding: 5px 10px;
+  font-size: 14px;
+}
+
+.projectDetailSidebar .pDetailTableBox tr:first-child > td {
+  border-bottom-width: 1px;
+}
+
+.projectDetailSidebar .pDetailTableBox td:not(:first-child) {
+  text-align: center;
+}
+
+.reportHead {
+  display: block;
+}
+
+.reportHead h2 {
+  margin: 0;
+  display: inline-block;
+}
+
+.reportHead h6 {
+  margin: 0 0 20px 0;
+  display: inline-block;
+  font-size: 16px;
+}
+
+.usersAndRoles .rightTableBox .tableSection td .css-10nd86i .css-1aya2g8,
+.usersAndRoles .rightTableBox .tableSection td .css-10nd86i .css-2o5izw {
+  min-height: 28px;
+}
+
+.usersAndRoles .rightTableBox .tableSection td .css-10nd86i .css-1ep9fjw,
+.usersAndRoles .rightTableBox .tableSection td .css-10nd86i .css-1sjym57 {
+  padding: 0px 8px;
+}
+
+#projectStatusUpdatePopup .modal-body p {
+  margin: 0;
+}
+
+#projectStatusUpdatePopup .modal-body p.dnn {
+  background: #f3f3f3;
+  padding: 7px 15px;
+}
+
+#projectStatusUpdatePopup .modal-body p.dnn strong {
+  display: block;
+}
+
+#projectStatusUpdatePopup .modal-body .noteDescription {
+  padding: 10px 0;
+}
+
+#projectStatusUpdatePopup .modal-body .pFieldHead {
+  border-bottom: 1px solid #ccc;
+  margin-bottom: 20px;
+  padding-bottom: 10px;
+}
+
+.checkboxinline,
+.checkboxinline label {
+  display: block;
+}
+
+.checkboxinline p {
+  display: inline-block;
+  margin: 0 30px 0 0;
+  line-height: 40px;
+}
+
+.scrollbox {
+  height: 1000px !important;
+}
+
+[class*='urTable'] > .react-bs-table-container .react-bs-container-header th:nth-child(-n + 2),
+[class*='urTable'] > .react-bs-table-container .react-bs-container-body td:nth-child(-n + 2) {
+  width: 210px;
+}
+
+[class*='urTable'] > .react-bs-table-container .react-bs-container-header th:nth-child(n + 3),
+[class*='urTable'] > .react-bs-table-container .react-bs-container-body td:nth-child(n + 3) {
+  width: 160px;
+}
+
+.bigTable .react-bs-table-container .react-bs-container-body td[colSpan='2'] {
+  padding: 0 0 0 37px;
+}
+
+.bigTable
+  .react-bs-table-container
+  .react-bs-container-body
+  .bigTableInner
+  .react-bs-table-bordered {
+  border: 0;
+  border-radius: 0;
+}
+
+/*.bigTable .react-bs-table-container .react-bs-table-tool-bar  {
+	position: absolute;
+    top: -51px;
+    right: 17px;
+    width: 100%;
+}*/
+.css-10nd86i small {
+  display: block;
+  font-size: 9px;
+  line-height: 8px;
+  margin-bottom: 6px;
+}
+
+.pdfLogoBox {
+  display: none;
+}
+
+.btn rightalignmentBtn {
+  float: right;
+  padding: 8px 20px;
+  background: #8c8c8c;
+  color: #fff !important;
+  border-radius: 4px;
+  border: 0;
+  margin-left: 10px;
+}
+
+.btn rightalignmentBtn i {
+  margin-right: 10px;
+}
+
+.btn rightalignmentBtn:hover,
+.btn rightalignmentBtn:focus {
+  color: #fff;
+  background: #616161;
+}
+
+.reportTableSection .react-bs-table-container .react-bs-container-body table tr.expandtr td {
+  border-right: 0;
+  border-left: 0;
+}
+
+.reportTableSection .react-bs-table-container .react-bs-container-body table tr.expandtr + tr > td,
+.reportTableSection
+  .react-bs-table-container
+  .react-bs-container-body
+  table
+  tr.expandtr2
+  + tr
+  > td {
+  padding: 0;
+}
+
+.reportTableSection
+  .react-bs-table-container
+  .react-bs-container-body
+  table
+  tr.expandtr
+  + tr
+  > td
+  .bigTableInner
+  .table-header-wrapper
+  table
+  th,
+.reportTableSection
+  .react-bs-table-container
+  .react-bs-container-body
+  table
+  tr.expandtr2
+  + tr
+  > td
+  .bigTableInner
+  .table-header-wrapper
+  table
+  th {
+  display: none;
+}
+
+.reportTableSection
+  .react-bs-table-container
+  .react-bs-container-body
+  table
+  tr.expandtr
+  + tr
+  > td
+  .bigTableInner
+  .react-bs-container-body
+  tr
+  td,
+.reportTableSection
+  .react-bs-table-container
+  .react-bs-container-body
+  table
+  tr.expandtr2
+  + tr
+  > td
+  .bigTableInner
+  .react-bs-container-body
+  tr
+  td {
+  background: #f9f9f9;
+}
+
+.reportTableSection
+  .react-bs-table-container
+  .react-bs-container-body
+  table
+  tr.expandtr
+  + tr
+  > td
+  .bigTableInner
+  .react-bs-container-body
+  tr
+  td:nth-child(2) {
+  padding-left: 51px;
+  width: 250px;
+  border-left: 0;
+}
+
+.reportTableSection
+  .react-bs-table-container
+  .react-bs-container-body
+  table
+  tr.expandtr2
+  + tr
+  > td
+  .bigTableInner
+  .react-bs-container-body
+  tr
+  td:nth-child(2) {
+  padding-left: 51px;
+  width: 246px;
+  border-left: 0;
+  border-right: 0;
+}
+
+.reportTableSection
+  .react-bs-table-container
+  .react-bs-container-body
+  table
+  tr.expandtr2
+  + tr
+  > td
+  .bigTableInner
+  .react-bs-container-body
+  tr
+  td:nth-child(3) {
+  border-left: 0;
+}
+
+.reportTableSection
+  .react-bs-table-container
+  .react-bs-container-body
+  table
+  tr.expandtr2
+  + tr
+  > td
+  .bigTableInner
+  .react-bs-container-body
+  tr
+  td:nth-child(4) {
+  border-left: 0;
+  border-right: 0;
+}
+
+.reportTableSection
+  .react-bs-table-container
+  .react-bs-container-body
+  table
+  tr.expandtr2
+  + tr
+  > td
+  .bigTableInner
+  .react-bs-container-body
+  tr
+  td:nth-child(5) {
+  border-right: 0;
+  border-left: 0;
+}
+
+.reportTableSection .react-bs-table-container .react-bs-container-body table tr.expandtr2 td {
+  border-right: 0;
+}
+
+.reportTableSection
+  .react-bs-table-container
+  .react-bs-container-body
+  table
+  tr.expandtr2
+  + tr
+  > td
+  .bigTableInner
+  .react-bs-container-body
+  tr
+  td {
+  width: 25%;
+}
+
+.react-bs-table-container .react-bs-table .react-bs-container-header table thead th .order {
+  display: none;
+}
+
+a.helpActive {
+  color: black;
+  font-weight: 700;
+}
+
+/*.rowContact .col {
+    border: 1px solid;
+    padding: 5px;
+    font-size: 12px;
+    font-weight: bold;
+}
+.text-right{
+  text-align: right;
+}
+*/
+/*--------------- Project Prelim Info Report -----------------*/
+.jobSiteInfoBox {
+  display: block;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-bottom: 30px;
+  padding: 30px;
+}
+
+.jobSiteInfoBox .jobTitle {
+  font-size: 20px;
+  font-weight: 600;
+  color: #000000;
+  line-height: 26px;
+}
+
+.jsibRight {
+  display: block;
+}
+
+.jsibRight .jobN,
+.outerJobN {
+  float: right;
+  position: relative;
+}
+
+.jsibRight .jobN label,
+.outerJobN label,
+.jsibRight .proName label {
+  font-size: 14px;
+  margin: 0;
+  display: inline-block;
+}
+
+.jsibRight .jobN .job-num,
+.outerJobN .job-num {
+  display: inline-block;
+  border: 1px solid #ccc;
+  font-size: 18px;
+  color: #000000;
+  width: 150px;
+  padding: 5px 10px;
+  margin-left: 10px;
+}
+
+.jsibRight .jobN .alt-job-num,
+.outerJobN .alt-job-num {
+  display: inline-block;
+  border: 1px solid #ccc;
+  font-size: 18px;
+  color: #000000;
+  width: 150px;
+  padding: 5px 10px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.jsibRight .proName {
+  display: block;
+  float: left;
+  width: 100%;
+  margin-top: -28px;
+  margin-bottom: 10px;
+}
+
+.jsibRight .proName h1 {
+  margin: 5px 0 0 0;
+  font-size: 24px;
+  border: 1px solid #ccc;
+  color: black;
+  padding: 7px 10px;
+}
+
+.jsibRight .row.clear {
+  clear: both;
+}
+
+.jsibRight .row.contact {
+  margin-bottom: 20px;
+}
+
+.jsibRight .address-box {
+  display: block;
+}
+
+.jsibRight .address-box p {
+  font-weight: 600;
+  margin: 0;
+}
+
+.jsibRight .address-box p .address-text {
+  display: inline-block;
+  vertical-align: top;
+  width: 50%;
+  padding-right: 10px;
+}
+
+.jsibRight .address-box p span {
+  display: block;
+}
+
+.jsibRight .mapConstruct p {
+  margin: 0;
+}
+
+.jsibRight .mapConstruct p strong {
+  display: block;
+}
+
+.jsibRight .gcc p {
+  margin: 0;
+}
+
+.jsibRight .gcc h5 {
+  margin: 0 0 10px 0;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.jsibRight .gcc.right {
+  text-align: right;
+}
+
+.jsibRight .gcc.right p {
+  font-weight: 600;
+}
+
+.commentsBoxReports {
+  display: block;
+}
+
+.commentsBoxReports label {
+  display: block;
+  margin: 0 0 10px 0;
+  font-weight: 600;
+}
+
+.infoHotSheetTitle {
+  display: inline-block;
+  margin: 0 0 20px 0;
+}
+
+.crrReport {
+  display: block;
+  /* padding: 20px; */
+  padding: 5px 15px 0px 15px;
+}
+
+.crrReport .crrLeft,
+.crrReport .crrRight {
+  display: inline-block;
+  vertical-align: top;
+  width: 50%;
+}
+
+.crrReport .crrRight {
+  text-align: right;
+}
+
+.crrReport .crrBottom {
+  display: block;
+  /* padding-top: 20px; */
+  padding-top: 5px;
+}
+
+.crrReport span {
+  font-weight: 400;
+}
+
+.crrReport span strong {
+  margin-right: 10px;
+}
+
+fieldset.scheduler-border {
+  border: 1px groove #ddd !important;
+  padding: 0 1.4em 1.4em 1.4em !important;
+  margin: 0 0 1.5em 0 !important;
+  -webkit-box-shadow: 0px 0px 0px 0px #000;
+  box-shadow: 0px 0px 0px 0px #000;
+}
+
+legend.scheduler-border {
+  font-size: 1.2em !important;
+  font-weight: bold !important;
+  text-align: left !important;
+  width: auto;
+  padding: 0 10px;
+  border-bottom: none;
+}
+
+.profit-projection table {
+  width: 100%;
+}
+
+.profit-projection table th {
+  background: #f5f5f5;
+}
+
+.profit-projection table th,
+.profit-projection table td {
+  border: 1px solid #ccc;
+  padding: 5px;
+  font-size: 12px;
+  line-height: 18px;
+}
+
+.profit-projection table th a,
+.profit-projection table td a {
+  text-decoration: underline;
+}
+
+.profit-projection table th a:hover,
+.profit-projection table td a:hover {
+  text-decoration: none;
+}
+
+.profit-projection table .border.border2 td,
+.profit-projection table .border.border2 {
+  border: 0;
+  font-weight: 600;
+}
+
+.modal .form-check-input {
+  position: static;
+  margin: 0;
+}
+
+.modal .lineheight {
+  line-height: 38px;
+}
+
+/*.profit-projection table tr.border.border2 {
+	background: #f1f1f1;
+}*/
+.profit-projection table tr.subtotal,
+.profit-projection table tr.subtotal {
+  background: #e2e2e2;
+}
+
+.profit-projection table tr.total {
+  background: #cecece;
+}
+
+.svgGraph > div {
+  width: 100%;
+  text-align: center;
+}
+
+.psr {
+  margin-bottom: 20px;
+}
+
+.timesheetBottomTable .totaltableBox {
+  padding-left: 100px;
+}
+
+.timesheetBottomTable .totaltableBox .totaltext {
+  display: inline-block;
+  vertical-align: top;
+  width: auto;
+  margin-right: 10px;
+}
+
+.timesheetBottomTable .totaltableBox table {
+  float: right;
+  width: 410px;
+}
+
+.addressLabelPDFreport {
+  display: none;
+}
+
+.addressLabelPDFreport ul li {
+  display: inline-block;
+  vertical-align: top;
+  text-align: left;
+  font-size: 13px;
+  color: #000;
+  min-height: 75px;
+  padding: 15px;
+  width: 32.5%;
+  border: 1px solid #000;
+  border-radius: 10px;
+  margin: 0px 10px 6px 0px;
+}
+.addressLabelPDFreport ul li:nth-child(3n + 3) {
+  margin-right: 0px !important;
+}
+
+.addressLabelPDFreport table tr {
+  margin-bottom: 60px;
+}
+
+.addressLabelPDFreport table td {
+  border: 0;
+  padding: 10px;
+  text-align: left;
+}
+
+.titleClass {
+  margin-top: -40px;
+  margin-bottom: 10px;
+}
+
+.nobidReport {
+  /* margin-top: -55px; */
+  margin-top: -30px;
+}
+
+.MasterConstructionsScheduleReport {
+  margin-top: -30px;
+  padding-top: 0;
+}
+
+.activeColor {
+  background-color: red;
+  /* background-color:#ff8100; */
+  height: 10px;
+  margin: 0 -5px;
+}
+
+.suspendedColor {
+  background-color: #ffeb3b;
+  height: 10px;
+  margin: 0 -5px;
+}
+
+.bpColor {
+  background-color: cyan;
+  height: 10px;
+  margin: 0 -5px;
+}
+
+.resourceScheduleReport table th,
+.resourceScheduleReport table td {
+  line-height: 18px;
+}
+
+.resourceScheduleReport table td {
+  font-size: 12px;
+}
+
+.resourceScheduleReport table th,
+.resourceScheduleReport table td {
+  padding: 5px;
+}
+
+.resourceScheduleReport table.rsrTable td:nth-child(4) ~ td {
+  border-right: 0px;
+  border-left: 0px;
+}
+
+.resourceScheduleReport table.rsrTable td:nth-child(4) ~ td:last-child {
+  border-right: 1px solid #ccc;
+}
+
+.resourceScheduleReport table.rsrTable.ppr td {
+  border: 1px solid #ccc;
+}
+
+td.colorDivsWrapr {
+  padding: 2px 0 0 0 !important;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.colorDivsWrapr div {
+  flex: 1;
+  margin: 0 !important;
+  display: inline-flex;
+  width: 100%;
+}
+
+.react-datepicker__time-container
+  .react-datepicker__time
+  .react-datepicker__time-box
+  ul.react-datepicker__time-list
+  li.react-datepicker__time-list-item {
+  line-height: 9px;
+}
+
+.HomeDesc {
+  margin-top: 30px;
+}
+
+.HomeDesc p {
+  margin: -12px 0 15px 0;
+}
+
+.mobileApp p {
+  margin: -12px 0 150px 0;
+}
+
+.home-colbox {
+  margin-top: -20px;
+}
+
+.home-sidebar {
+  height: 100%;
+  margin: 15px 15px 0;
+}
+
+.tsBottomBox {
+  padding-top: 40px;
+}
+
+.profit-projection table.timesheetsmalltable {
+  width: 380px;
+  float: right;
+}
+
+.profit-projection table.timesheetsmalltable2 {
+  width: 320px;
+  float: right;
+}
+
+.profit-projection table.timesheetsmalltable td,
+.profit-projection table.timesheetsmalltable2 td {
+  height: 40px;
+}
+
+.home-colbox p {
+  margin: 0 0 5px 0;
+}
+
+.appColor {
+  color: #2983ce;
+}
+
+svg > g.donutchart-legend {
+  display: none;
+}
+
+.btn-primary.disabled,
+.btn-primary:disabled {
+  background: #ccc;
+  border-color: #ccc;
+  color: #737373;
+}
+
+.endDateColor {
+  /* background-color:#4f97d4;
+    background-color:#000;*/
+  height: 10px;
+}
+
+.endDateColor:after {
+  /* content: ' \25C6'; */
+  content: ' \2666';
+  /* font-size: 17px;
+   margin-top: -5px; */
+  font-size: 20px;
+  margin-top: -5px;
+  position: relative;
+  z-index: 1;
+  margin-left: -5px;
+}
+
+.fc-toolbar button {
+  position: relative;
+  text-transform: capitalize;
+}
+
+.masterSection .nav-link {
+  display: block;
+  padding: 0px !important;
+}
+
+.nav-link {
+  display: block;
+}
+
+.requiredField {
+  color: red;
+}
+
+.float_area {
+  max-width: 10px;
+  position: absolute;
+  /* right: 48%; */
+  top: 9px;
+}
+
+.float_area1 {
+  max-width: 10px;
+  position: absolute;
+  top: 18px;
+}
+
+.profileImage {
+  width: 350px;
+  height: 38px;
+  display: inline-block;
+  position: relative;
+  margin-left: 15px;
+  vertical-align: top;
+}
+
+.profileImage img {
+  height: auto;
+  width: 60px;
+  margin-bottom: 23px;
+}
+
+.profileImag div div {
+  cursor: pointer;
+  z-index: 1;
+  border-radius: 6px;
+  /* border: 5px solid rgba(0, 0, 0, 0.20); */
+}
+
+.endDateMColor {
+  /* background-color:#4f97d4; */
+  height: 22px;
+  text-align: center;
+}
+
+.endDateMColor:after {
+  /* content: ' \25C6'; */
+  content: ' \2666';
+  /* font-size: 17px;
+   margin-top: -5px; */
+  font-size: 23px;
+  margin-top: -6px;
+  position: relative;
+  z-index: 1;
+}
+
+.fieldBoxRow input.field[disabled] {
+  background: #ececec;
+}
+
+.dashboardGreyBox {
+  display: block;
+  padding: 30px;
+  background: #e4e4e4;
+  border-radius: 5px;
+  margin-bottom: 30px;
+}
+
+.backright {
+  float: right;
+}
+
+.colseTab {
+  margin-top: 0px;
+}
+
+span.anchor {
+  cursor: pointer;
+}
+
+.varMonthYeartd {
+  width: 25%;
+}
+
+input.error,
+div.error {
+  border: 1px solid red;
+}
+
+.csTableHead table,
+.csTableBody table {
+  table-layout: fixed;
+}
+
+.csTableHead table th {
+  font-size: 13px;
+  line-height: 15px;
+  background: #eee;
+}
+
+.csTableHead table th,
+.csTableBody table td {
+  border: 1px solid #ccc;
+  padding: 6px;
+}
+
+.textCenter {
+  text-align: center;
+}
+
+.sidebarBox ul.sidebarlist li .nav-link {
+  padding: 0;
+}
+
+.ovs {
+  margin-bottom: 10px;
+}
+
+.tableSection.urTable1 table tr:nth-last-child(1) td .css-10nd86i > .css-15k3avv,
+.tableSection.urTable1 table tr:nth-last-child(2) td .css-10nd86i > .css-15k3avv,
+.tableSection.urTable1 table tr:nth-last-child(3) td .css-10nd86i > .css-15k3avv,
+.tableSection.urTable2 table tr:nth-last-child(1) td .css-10nd86i > .css-15k3avv,
+.tableSection.urTable2 table tr:nth-last-child(2) td .css-10nd86i > .css-15k3avv,
+.tableSection.urTable2 table tr:nth-last-child(3) td .css-10nd86i > .css-15k3avv,
+.tableSection.urTable3 table tr:nth-last-child(1) td .css-10nd86i > .css-15k3avv,
+.tableSection.urTable3 table tr:nth-last-child(2) td .css-10nd86i > .css-15k3avv,
+.tableSection.urTable3 table tr:nth-last-child(3) td .css-10nd86i > .css-15k3avv,
+.tableSection.urTable4 table tr:nth-last-child(1) td .css-10nd86i > .css-15k3avv,
+.tableSection.urTable4 table tr:nth-last-child(2) td .css-10nd86i > .css-15k3avv,
+.tableSection.urTable4 table tr:nth-last-child(3) td .css-10nd86i > .css-15k3avv,
+.tableSection.urTable5 table tr:nth-last-child(1) td .css-10nd86i > .css-15k3avv,
+.tableSection.urTable5 table tr:nth-last-child(2) td .css-10nd86i > .css-15k3avv,
+.tableSection.urTable5 table tr:nth-last-child(3) td .css-10nd86i > .css-15k3avv {
+  top: -120px !important;
+}
+
+.bidDateRight {
+  float: right;
+}
+
+.modal #projectStatusUpdatePopup .modal-footer input[type='button'] {
+  margin-left: 10px;
+}
+
+.addContactBtn {
+  float: right;
+  margin-left: 15px;
+}
+
+.projectListBoxRight {
+  position: absolute;
+  top: 0;
+  right: 15px;
+  z-index: 0;
+}
+
+.projectListBoxRight input[type='text'] {
+  border: 1px solid #ccc;
+  padding: 6px 10px;
+  border-radius: 4px;
+  width: 300px;
+}
+
+.leadStatus {
+  margin-bottom: 20px;
+}
+
+.leadStatus .profileName {
+  padding-top: 5px;
+  padding-left: 80px;
+}
+
+.leadStatus h3 {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size: 20px;
+  color: #000;
+}
+
+.leadStatus p {
+  margin-bottom: 0;
+  color: #000;
+}
+
+.leadStatus .buttons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: end;
+  gap: 8px;
+}
+
+.leadDetails.pDetail {
+  display: grid;
+  grid-template-columns: 1fr min-content;
+  align-items: center;
+  column-gap: 16px;
+  padding: 16px;
+  background-color: #d9d9d9;
+  border: 1px solid #00000050;
+  border-radius: 8px;
+}
+
+.leadDetails > .MuiAvatar-root {
+  width: 60px;
+  height: 60px;
+  text-transform: uppercase;
+  background-color: #000;
+}
+
+.leadPrint {
+  display: none;
+}
+
+.hyperLink {
+  color: #0c87de;
+  font-weight: 600;
+}
+
+.hyperLink:hover {
+  text-decoration: underline;
+}
+
+.fileHyperLink {
+  color: #0c87de;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.fileHyperLink:hover {
+  text-decoration: underline;
+}
+
+.attNames {
+  margin-top: -29px;
+}
+
+.reminderBox {
+  position: relative;
+  padding-left: 20px;
+}
+
+.reminderBox i {
+  position: absolute;
+  left: 0;
+  top: 4px;
+  z-index: 0;
+}
+
+svg > g > g:last-child {
+  pointer-events: none;
+}
+
+.msgBox {
+  text-align: center;
+  font-weight: 600;
+  margin-top: 15%;
+  font-size: 15px;
+}
+
+.msgBox1 {
+  text-align: center;
+  font-weight: 600;
+  font-size: 15px;
+}
+
+.textRight {
+  text-align: right !important;
+}
+
+.anchorlink {
+  color: #0c87de !important;
+  text-decoration: underline !important;
+}
+
+.anchorlink:hover {
+  color: #0c87de !important;
+  text-decoration: none !important;
+}
+
+.font15 {
+  font-size: 15px;
+}
+
+.addProjectPopupBottomBtnBox button {
+  margin-left: 10px;
+}
+
+.footContactPopup {
+  padding: 20px 16px;
+}
+
+.footContactPopup label {
+  display: inline-block;
+  vertical-align: top;
+  margin-right: 20px;
+  padding: 5px 30px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.footContactPopup label input[type='radio'] {
+  margin-right: 10px;
+}
+
+.rightalignmentBtn {
+  float: right;
+  margin-right: 20px;
+}
+
+#projectStatusUpdatePopup .react-bs-table-container .react-bs-container-body {
+  max-height: 400px;
+  overflow-y: scroll;
+}
+
+.resourceScheduleReport .table-responsive {
+  overflow-y: hidden;
+}
+
+.sticky {
+  position: fixed !important;
+  top: 0 !important;
+  width: 1169px;
+}
+
+.profileImag {
+  float: left;
+  position: relative;
+}
+
+.profileImag img {
+  border-radius: 50%;
+}
+
+.changeImgBox {
+  position: relative;
+  z-index: 0;
+  border-radius: 0;
+  border: 0;
+  width: 60px;
+  height: 20px;
+  display: block;
+}
+
+.changeImgBox input[type='file'] {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  opacity: 0;
+}
+
+.changeImgBox .cit {
+  z-index: 0;
+  border-radius: 0;
+  border: 0;
+  position: static;
+  display: block;
+  text-align: center;
+  font-size: 9px;
+  color: #0c87de;
+}
+
+td span.phoneNumberBox {
+  float: right;
+  width: 160px;
+  text-align: right;
+  margin-top: -70px;
+  margin-right: 10px;
+}
+
+.ppirEP {
+  display: inline-block;
+  vertical-align: top;
+  width: 49%;
+}
+
+#projectStatusUpdatePopup .addContact label span {
+  padding-left: 10px;
+}
+
+#projectStatusUpdatePopup .addContact label span input[type='text'] {
+  width: 100px;
+  margin-right: 10px;
+  border: 1px solid #ccc;
+  padding: 10px;
+  background: none;
+  border-radius: 4px;
+}
+
+.textCenter {
+  text-align: center;
+  margin-top: 20px;
+  font-weight: 600;
+  color: #000;
+}
+
+.woVarFixed input[type='number']::-webkit-inner-spin-button,
+.woVarFixed input[type='number']::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.msgBoxEF {
+  margin-left: 38%;
+}
+
+.jobNumLabel {
+  margin-top: 15%;
+}
+
+.fieldBoxRow.section2 label.disabledJob {
+  background: #ececec !important;
+}
+
+.cursorPointer {
+  cursor: pointer;
+}
+
+.helpBox p {
+  margin: 0 0 10px 0;
+}
+
+/* header .searchbox .searchB button[type="button"] {
+  position: absolute;
+  right: 7px;
+  top: 2px;
+  background: #fff !important;
+  color: #000 !important;
+  border: 0 !important;
+  padding: 0;
+  z-index: 1;
+} */
+
+.TermTitle {
+  text-align: center;
+  font-weight: 600;
+}
+
+.termsHeading {
+  font-size: 13px;
+  font-weight: 600;
+  margin: 10px 0 13px 0;
+}
+
+.termsBox p {
+  font-size: 12px;
+  color: #000;
+  margin: 0 0 10px 0;
+}
+
+.footLeft ul.social li a:hover {
+  color: #0c87de;
+  text-decoration: underline;
+}
+
+.field1 {
+  width: 100%;
+  padding: 0.375rem 0.75rem;
+  font-size: 13px;
+  border: 0;
+  border-radius: 4px;
+  margin-bottom: 10px;
+  border: 1px solid #ced4da;
+}
+
+.pegBtnactive {
+  background: #000000;
+  color: #fff;
+}
+
+.linkText {
+  color: #4a92e2 !important;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.linkText:hover {
+  color: #4a92e2 !important;
+  cursor: pointer;
+  text-decoration: underline !important;
+  outline: 0;
+}
+
+.outputinner .statusSchedule {
+  float: right;
+  text-align: right;
+  clear: both;
+  margin: 0;
+  padding: 0;
+}
+
+.anchorNote {
+  white-space: nowrap;
+  width: 125px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: inline-block;
+  color: #4a92e2 !important;
+  font-weight: 200;
+  font-size: 12px !important;
+}
+
+.anchorNote p {
+  color: #4a92e2 !important;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  /*white-space: nowrap;
+  width: 111px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  color: #4a92e2 !important;
+  font-weight: 200;
+  font-size: 12px !important;*/
+}
+table.rsrTable.ppr td.jobname a {
+  white-space: nowrap;
+  width: 120px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: inline-block;
+  color: #4a92e2 !important;
+  font-weight: 200;
+  font-size: 12px !important;
+}
+
+.cancelledStatus {
+  color: red;
+  border-color: #f5c6cb;
+}
+
+.successStatus {
+  color: green;
+  border-color: #c3e6cb;
+}
+.clrReport .subtitlebox {
+  width: 50%;
+  display: inline-block;
+  position: relative;
+  z-index: 1;
+}
+.clrReport .clrbox {
+  margin-top: -80px;
+}
+
+.modal .modal-dialog.modal-sm {
+  max-width: 300px;
+}
+
+.modal .modal-dialog.modal-sm span {
+  display: grid;
+}
+
+.modal .modal-dialog.modal-sm span button.btn rightalignmentBtn {
+  margin: 0;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.roleRow {
+  margin-top: 75px;
+}
+
+.prole-modal {
+  width: 43%;
+  text-align: center;
+}
+
+.prole-modal .modal-content {
+  padding: 20px !important;
+}
+
+.prole-modal .modal-footer {
+  justify-content: center;
+}
+
+.logonote.col-8 {
+  font-size: 14px;
+  font-weight: 600;
+}
+/* .test:before {
+  content: "";
+  width:100%;
+  height:100%;
+  background: #fff;
+  position:fixed;
+  top:0;
+  bottom:0;
+  left:0;
+  right:0;
+  z-index:1;
+} */
+
+header .searchbox .searchB {
+  display: flex;
+}
+header .searchbox .searchB button.css-1r4vtzz,
+header .searchbox .searchB button.css-1r4vtzz:focus,
+header .searchbox .searchB button.css-1r4vtzz:hover {
+  height: 28px;
+  width: 100%;
+  min-height: 28px;
+}
+.globalselect .css-48ayfv {
+  height: 28px;
+  width: 100%;
+  min-height: 28px;
+  border-radius: 4px;
+}
+
+.searchB .col-md-6 {
+  padding-right: 5px;
+  padding-left: 5px;
+}
+.searchB .col-md-6.last-6 {
+  padding-right: 0;
+}
+.globalselect .css-11unzgr {
+  overflow-x: hidden;
+  padding: 0;
+}
+
+.globalselect .css-1qprcsu-option {
+  background-color: #3b91ff;
+}
+
+.globalselect .css-1v99tuv {
+  font-size: 13px;
+}
+.search_list ul li > ul.search_dt_type li a {
+  font-size: 14px;
+}
+header .searchbox .searchB .fieldHS::-webkit-input-placeholder,
+header .searchbox .searchB .fieldHS::-moz-placeholder,
+header .searchbox .searchB .fieldHS::-ms-input-placeholder,
+header .searchbox .searchB input[placeholder] {
+  color: #000 !important;
+}
+header .searchbox .searchB input::-webkit-input-placeholder,
+header .searchbox .searchB input::-moz-placeholder,
+header .searchbox .searchB input::-ms-input-placeholder {
+  color: #000;
+}
+.globalselect .css-1vr111p-option {
+  font-size: 13px;
+}
+.globalselect .css-1r4vtzz {
+  border-radius: 4px;
+}
+
+.react-datepicker {
+  height: 270px !important;
+}
+
+.react-datepicker__time {
+  height: 225px !important;
+}
+
+.react-datepicker__time-list {
+  height: 205px !important;
+}
+
+img.cellimage {
+  max-width: 100%;
+  width: 16px;
+  margin-right: 7px;
+}
+
+.left-col {
+  float: left;
+  width: 47%;
+  padding: 0px 9px;
+}
+
+.arrow-ic {
+position: absolute;
+top: 35px;
+right: -2px;
+z-index: 999999;
+cursor: pointer;
+}
+
+.arrow-ic i{
+  cursor: pointer;
+}
+
+.p-rel {
+  position: relative;
+}
+
+.helptext-wrapper p {
+  font-size: 13px;
+  margin: 0;
+}
+
+.nested-table-item {
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
+}
+
+.nested-table-item .no-print {
+  /* display: none !important; */
+}
+
+.nested-table-item table {
+  margin-top: 0;
+}
+
+.nested-table-item .empty-table {
+  width: 100%;
+}
+
+.nested-table-item-mt table {
+  margin-top: 16px;
+}
+
+.nested-table-item-contents p {
+  font-size: 12px;
+  margin: 0 16px 0 0;
+  width: 178px;
+}
+
+.nested-table-item-contents .title {
+  font-size: 12px;
+  margin: 0 16px 0 0;
+  width: 108px;
+}
+
+.nested-table-item-last td {
+  padding: 0 !important;
+}
+.nested-table-item-last td > div > div {
+  padding:  0.2rem;
+}
+.nested-table-item-last td >  div > div:last-child {
+  background-color: #aaa;
+}
+
+.profit-projection .nested-table-item:not(:first-child) table thead {
+    display: none;
+}
+
+.export-options-wrapper {
+  overflow: hidden;
+  max-width: 220px;
+}
+
+.export-options-wrapper button {
+  display: block;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.table-responsive .nested-table-item:not(:first-child) thead {
+  display: none;
+}
+
+.table-actions{
+  max-height: 45px;
+}
+
+.table-actions .btn-outline-secondary {
+  border-radius: 4px;
+  border-color:rgba(0.5, 0.5, 0.5, 0.5);
+
+}
+
+.table-actions .btn-outline-secondary .fa {
+  font-size: 15px;
+}
+
+.table-settings-action-block {
+  display: flex;
+  padding: 16px 0 0 0;
+  border-top: 1px solid #ccc;
+}
+
+.profit-projection .nested-table-item:first-child .table-actions {
+  margin-bottom: 24px;
+}
+
+.settings-table {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.react-datepicker__day--in-selecting-range, .react-datepicker__day--in-range {
+  background-color: #82b9e4;
+}
+
+.react-datepicker__day--selected{
+  background-color: #165789;
+}
+
+
+.react-datepicker__day--in-range-end, .react-datepicker__day--in-range-end{
+  background-color: #54a4e2;
+}
+
+
+@media print {
+  @page {
+    size: Letter;
+  }
+  .no-print,
+  .no-print * {
+    display: none !important;
+  }
+  .no-break-print {
+    // break-inside: avoid;
+    page-break-inside: auto;
+  }
+
+  .b-toolbar {
+    display: none !important;
+  }
+
+  .table-responsive{
+    overflow-x: hidden;
+  }
+
+  .editBtn{
+    visibility:hidden;
+  }
+
+  .tab-content{
+    background: #fff;
+  }
+
+
+  .projectTabs #controlled-tab-example .tab-content {
+      background: #fff;
+      padding: 0px;
+    }
+
+ 
+
+  .table-with-selection table thead tr th:first-child {
+    display: none !important;
+  }
+  .table-with-selection table tbody tr td:first-child {
+    display: none !important;
+  }
+  table {
+    /* table-layout: fixed !important; */
+    width: 100% !important;
+    // transform: scale(0.79);
+    // transform-origin: 0 0;
+  }
+
+  table thead  {
+    display:table-header-group;
+  }
+
+  table thead tr th,
+  table tbody tr td {
+    word-wrap: break-word !important;
+  }
+
+  table thead tr th {
+    border: 1px solid #333 !important;
+  }
+  table thead tr th .sort-icon-wrapper {
+    display: none;
+  }
+  table tbody tr td {
+    border: 1px solid #333 !important;
+  }
+
+  table tr:nth-child(even) {
+    background-color: #fff !important;
+  }
+
+  table tbody tr td a,
+  table tbody tr td .linkText{
+    color: #000 !important;
+    text-decoration: none !important;
+  }
+}

@@ -9,7 +9,7 @@ module.exports = class ExportServer {
         const { tabs, chromiumArgs, chromiumExecutablePath, logger, testing, quick } = config;
 
         this.taskQueue = new Queue({
-            maxWorkers : config['max-workers'],
+            maxWorkers : 1||Number(config['max-workers']),
             useTabs    : Boolean(tabs),
             chromiumArgs,
             chromiumExecutablePath,

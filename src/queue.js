@@ -6,7 +6,7 @@ const { RequestCancelError } = require('./exception.js');
 const
     alphabet         = '0123456789abcdefghijklmnopqrstuvwxyz',
     // Also defined in commands.js
-    MAX_WORKERS      = 5,
+    MAX_WORKERS      = 1,
     // Max amount of fails allowed before rejecting request
     MAX_FAILS        = 3,
     // This is used for testing purposes only
@@ -34,7 +34,7 @@ const paperFormat = {
 };
 
 function inchToPx(value, round = true) {
-    // 1in = 96px for screens
+    // 1in = 96px for screens set dpi
     // https://developer.mozilla.org/en-US/docs/Web/CSS/length#Absolute_length_units
     let result = value * 96;
 
@@ -95,11 +95,13 @@ class Loggable extends EventEmitter {
         this.id = getId();
 
         this.on('error', e => {
+            
             this.error(e);
         });
     }
 
     verbose(message) {
+        console.log(message);
         this.log('verbose', message);
     }
 
@@ -112,6 +114,7 @@ class Loggable extends EventEmitter {
     }
 
     error(e) {
+        console.log(e.message);
         this.log('error', e.error && e.error.stack || e.stack || e.message || e);
     }
 
@@ -125,7 +128,7 @@ class Queue extends Loggable {
         super();
         const me = this;
 
-        me.maxWorkers = Number(maxWorkers);
+        me.maxWorkers = maxWorkers;
         me.useTabs = useTabs;
 
         // Boolean flag to use quick loading (waitUntil load). Makes pages to export faster, fonts might be missing.
@@ -599,12 +602,22 @@ class Worker extends Loggable {
         const me = this;
 
         config.printBackground = true;
-        config.margin = {
-            top    : 0,
-            bottom : 0,
-            left   : 1,
-            right  : 1
-        };
+
+        if(config.orientation === 'portrait'||!config.orientation){
+            config.margin = {
+                top    : '5mm',
+                bottom : '10mm',
+                left   : '5mm',
+                right  : '5mm'
+            };
+        }else{
+            config.margin = {
+                top    : '5mm',
+                bottom : '10mm',
+                left   : '5mm',
+                right  : '5mm'
+            };
+        }
 
         // NOTE: NOT SUPPORTED IN WSL
         if (config.clientURL) {

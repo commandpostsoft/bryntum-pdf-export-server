@@ -9,6 +9,7 @@ const path = require('path');
 const serveStatic = require('serve-static');
 const ExportServer = require('./ExportServer.js');
 const { RequestCancelError } = require('../exception.js');
+const { TimeoutError } = require('puppeteer');
 
 module.exports = class WebServer extends ExportServer {
     constructor(config) {
@@ -34,10 +35,12 @@ module.exports = class WebServer extends ExportServer {
         }, options);
 
         app.use(addRequestId);
-        app.use(bodyParser.json({ limit : options.maximum || '50mb' }));
-        app.use(bodyParser.urlencoded({ extended : false, limit : options.maximum || '50mb' }));
+        app.use(bodyParser.json({ limit : options.maximum || '200mb' }));
+        app.use(bodyParser.urlencoded({ extended : false, limit : options.maximum || '200mb', parameterLimit:50000 }));
 
+        
         //Set CORS
+
         if (options.cors !== 'false') {
             options.cors = options.cors || '*';
 
@@ -99,14 +102,17 @@ module.exports = class WebServer extends ExportServer {
 
                     //On binary the buffer is directly sent to the client, else store file locally in memory for 10 seconds
                     if (request.sendAsBinary) {
+                        me.logger.log('info', `Binary sent`);
                         res.set('Content-Type', 'application/octet-stream');
                         res.status(200).send(file);
                     }
                     else {
                         //Send the url for the cached file, will is cached for 10 seconds
+                        const urlSet=req.protocol + '://' + req.get('host') + req.originalUrl;
+                        me.logger.log('info', `URL sent to: `+urlSet);
                         res.status(200).jsonp({
                             success : true,
-                            url     : me.setFile(req.protocol + '://' + req.get('host') + req.originalUrl, request, file)
+                            url     : me.setFile(urlSet, request, file)
                         });
                     }
                 }).catch(e => {
@@ -130,11 +136,32 @@ module.exports = class WebServer extends ExportServer {
             });
         }
 
+        app.enable('trust proxy')
+
+        
+
+        app.use((req, res, next)=>{
+            res.setTimeout(options.timeout, function(){
+                console.log('res timeout');
+                // call back function is called when request timed out.
+            });
+            req.setTimeout(options.timeout, function(){
+                console.log('req timeout');
+                // call back function is called when request timed out.
+            });
+            next();
+        });
+       
+
         // order matters, this logger should be the last one
         app.use((err, req, res, next) => {
             me.logger.error(err.stack);
             next(err);
         });
+
+        me.keepAliveTimeout = options.timeout; 
+        // Ensure all inactive connections are terminated by the ALB, by setting this a few seconds higher than the ALB idle timeout
+        me.headersTimeout = options.timeout+1000; 
 
         if (options.http) {
             me.httpPort = process.env.PORT || options.http;
@@ -149,6 +176,8 @@ module.exports = class WebServer extends ExportServer {
             me.httpsServer = me.createHttpsServer(path.join(process.cwd(), 'cert'));
             me.httpsServer.timeout = options.timeout;
         }
+
+        
 
     }
 

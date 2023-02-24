@@ -1,7 +1,7 @@
 .idea
 
-cert
-cert/
+certTest
+certTest/
 log
 log/
 tmp
@@ -12,3 +12,4 @@ bin/mac
 node_modules/
 !log/config.json
 !.gitkeep
+.DS_Store

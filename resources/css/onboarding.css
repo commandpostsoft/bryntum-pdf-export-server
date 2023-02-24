@@ -1,0 +1,65 @@
+.onboarding-header {
+  background-color: #d8d8d8;
+  padding: 15px 0 19px 0;
+  display: block;
+}
+
+.on-brd-paragraph {
+  margin-bottom: 0px;
+}
+
+.onboarding-section .Colbox {
+  padding: 0px;
+  border: none;
+}
+
+.paragraph p {
+  font-style: italic;
+  margin-bottom: 5px;
+}
+
+.onboarding-box input.btn {
+  background: none !important;
+  border: none;
+  padding: 0px;
+  padding-right: 20px;
+  color: #0c87de;
+}
+
+.onboarding-box input:hover,
+.onboarding-box input.btn:active,
+.onboarding-box input.btn:focus,
+.onboarding-box input.btn:active:focus {
+  background: none !important;
+  text-decoration: underline;
+  border: none;
+  color: #0c87de;
+  box-shadow: none;
+}
+.onboarding-box .btn:not(:disabled):not(.disabled):hover,
+.onboarding-box .btn:not(:disabled):not(.disabled):focus {
+  color: #0c87de;
+}
+.onboardingview-bt button:hover {
+  color: #fff;
+  background-color: #4c4c4c;
+  border: 2px solid #4c4c4c;
+  box-shadow: 0 0 0 0 #4c4c4c;
+}
+
+.on-brd-paragraph {
+  margin-top: 14px;
+}
+
+.onboarding-header .logo {
+  margin-top: 3px;
+}
+
+.onboarding-link {
+  pointer-events: none;
+  cursor: default;
+}
+
+.topnav-link a:hover {
+  color: #fff !important;
+}
