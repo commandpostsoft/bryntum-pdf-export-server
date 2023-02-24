@@ -18,9 +18,9 @@ afterEach(() => {
 describe('Should export over HTTP', () => {
     test('Should export tp PDF', async () => {
         const
-            host       = 'localhost',
+            host       = '0.0.0.0',
             protocol   = 'http',
-            port       = 8081,
+            port       = process.env.PORT || 8081,
             workers    = 4,
             fileFormat = 'pdf';
 
@@ -31,7 +31,7 @@ describe('Should export over HTTP', () => {
         const json = JSON.stringify(testData);
 
         for (let i = 0; i < 2; i++) {
-            promises.push(getFile(json, protocol, fileFormat, host, server.httpPort, 60000 * 2));
+            promises.push(getFile(json, protocol, fileFormat, host, process.env.PORT || server.httpPort, 60000 * 2));
         }
 
         const exportedFiles = await Promise.all(promises);
