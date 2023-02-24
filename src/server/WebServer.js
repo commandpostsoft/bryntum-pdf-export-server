@@ -137,14 +137,14 @@ module.exports = class WebServer extends ExportServer {
         });
 
         if (options.http) {
-            me.httpPort = options.http;
+            me.httpPort = process.env.PORT || options.http;
             me.findNextHttpPort = options.findNextHttpPort;
             me.httpServer = me.createHttpServer();
             me.httpServer.timeout = options.timeout;
         }
 
         if (options.https) {
-            me.httpsPort = options.https;
+            me.httpsPort = process.env.PORT || options.https;
             //Create https server and pass certificate folder
             me.httpsServer = me.createHttpsServer(path.join(process.cwd(), 'cert'));
             me.httpsServer.timeout = options.timeout;
