@@ -125,6 +125,7 @@ module.exports = class ExportServer {
             else {
                 config.format = format;
                 config.landscape = landscape;
+                config.omitBackground = true;
             }
 
             const me = this;
