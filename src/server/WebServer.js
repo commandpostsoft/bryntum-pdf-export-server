@@ -274,7 +274,7 @@ module.exports = class WebServer extends ExportServer {
     start() {
         return Promise.all([
             this.startHttpServer(),
-            this.startHttpsServer()
+            //this.startHttpsServer()
         ]);
     }
 };
